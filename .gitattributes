@@ -1,0 +1,4 @@
+*.csv text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+data/raw/**/*.html -text -diff linguist-vendored=true

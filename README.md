@@ -12,6 +12,7 @@ segunda capa derivada organiza el contenido por artículos y transitorios.
 - [Metodología de recolección](data/raw/tec/README.md)
 - [Captura de 25 documentos](data/raw/tec/2026-07-23/)
 - [Corpus procesado por secciones](data/processed/tec/README.md)
+- [Conjunto de evaluación de 40 preguntas](data/evaluation/README.md)
 
 ## Reproducir
 

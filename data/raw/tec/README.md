@@ -4,28 +4,20 @@ Esta carpeta conserva capturas reproducibles de normativa publicada por el
 Tecnológico de Costa Rica. El corpus se utilizará para desarrollar y evaluar un
 sistema RAG mínimo y observable.
 
-## Capturas disponibles
+## Alcance
 
-La captura inicial `2026-07-23` contiene cinco reglamentos:
+La captura `2026-07-23` contiene 25 documentos oficiales relacionados con:
 
-1. Reglamento del Régimen Enseñanza-Aprendizaje.
-2. Reglamento de Becas y Préstamos Estudiantiles.
-3. Reglamento de Equiparación de Asignaturas.
-4. Reglamento para el Funcionamiento del Programa de Residencias Estudiantiles.
-5. Reglamento de la Defensoría Estudiantil.
-
-La captura `2026-07-23-expanded` conserva esos cinco documentos y añade 20
-normas sobre:
-
-- admisión, aptitud académica, graduación, trabajos finales y reconocimiento de
-  títulos;
+- enseñanza, admisión, aptitud académica, graduación, trabajos finales,
+  equiparación de asignaturas y reconocimiento de títulos;
 - becas de posgrado, horas estudiante, asistencias, fondos solidarios y
-  movilidad;
-- convivencia, correo institucional, hostigamiento y discriminación;
+  movilidad, además de becas y préstamos estudiantiles;
+- residencias, defensoría, convivencia, correo institucional, hostigamiento y
+  discriminación;
 - elecciones, asambleas y representación estudiantil.
 
 El inventario exacto, las URL y las huellas de los 25 archivos están en
-`2026-07-23-expanded/manifest.csv`.
+`2026-07-23/manifest.csv`.
 
 Las páginas oficiales publican el contenido normativo como HTML; por eso se
 conserva la respuesta HTML original, sin convertirla ni alterar su contenido.
@@ -45,8 +37,7 @@ tamaño y SHA-256 de cada archivo.
   calendarios ni versiones derogadas dentro del corpus recuperable.
 - Las fechas de vigencia y modificación provienen de los metadatos o del texto
   publicado en las páginas oficiales.
-- Una captura ampliada recibe un identificador con sufijo para no sobrescribir
-  otra captura realizada en la misma fecha.
+- Cada captura queda identificada por su fecha y nunca se sobrescribe.
 
 Dos páginas antiguas fueron excluidas expresamente:
 
@@ -61,13 +52,8 @@ Desde la raíz del repositorio:
 
 ```powershell
 python scripts/collect_tec_regulations.py `
-  --snapshot-date YYYY-MM-DD `
-  --snapshot-id YYYY-MM-DD-expanded `
-  --profile expanded
+  --snapshot-date YYYY-MM-DD
 ```
-
-El perfil `initial` recupera los cinco documentos originales y el perfil
-`expanded` recupera los 25 documentos seleccionados.
 
 El recolector falla si una URL deja el dominio oficial, el servidor no devuelve
 HTML, faltan marcadores esperados o la página parece corresponder a una versión

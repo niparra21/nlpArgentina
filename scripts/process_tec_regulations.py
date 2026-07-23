@@ -95,14 +95,7 @@ EXPECTED_COUNTS = {
     },
 }
 
-INITIAL_DOCUMENT_IDS = {
-    "tec-rrea-2025",
-    "tec-becas-prestamos",
-    "tec-equiparacion-asignaturas",
-    "tec-residencias-estudiantiles",
-    "tec-defensoria-estudiantil",
-}
-EXPANDED_DOCUMENT_IDS = set(EXPECTED_COUNTS)
+CORPUS_DOCUMENT_IDS = set(EXPECTED_COUNTS)
 
 
 @dataclass(frozen=True)
@@ -113,7 +106,6 @@ class SourceDocument:
     canonical_url: str
     snapshot_date: str
     snapshot_id: str
-    profile: str
     retrieved_at: str
     effective_from: str
     last_known_modification: str
@@ -183,7 +175,6 @@ def load_sources(snapshot_id: str) -> list[SourceDocument]:
                     canonical_url=row["canonical_url"],
                     snapshot_date=row["snapshot_date"],
                     snapshot_id=row_snapshot_id,
-                    profile=row.get("profile") or "initial",
                     retrieved_at=row["retrieved_at"],
                     effective_from=row["effective_from"],
                     last_known_modification=row[
@@ -195,18 +186,12 @@ def load_sources(snapshot_id: str) -> list[SourceDocument]:
             )
 
     actual_documents = {source.document_id for source in sources}
-    supported_document_sets = (
-        INITIAL_DOCUMENT_IDS,
-        EXPANDED_DOCUMENT_IDS,
-    )
-    if actual_documents not in supported_document_sets:
+    if actual_documents != CORPUS_DOCUMENT_IDS:
         raise ValueError(
-            "Unexpected document set. Expected the initial or expanded "
-            f"profile, found {sorted(actual_documents)}"
+            "Unexpected document set. "
+            f"Expected {sorted(CORPUS_DOCUMENT_IDS)}, "
+            f"found {sorted(actual_documents)}"
         )
-    profiles = {source.profile for source in sources}
-    if len(profiles) != 1:
-        raise ValueError(f"Mixed collection profiles: {sorted(profiles)}")
     return sources
 
 
@@ -259,7 +244,6 @@ def build_record(
         "canonical_url": source.canonical_url,
         "snapshot_date": source.snapshot_date,
         "snapshot_id": source.snapshot_id,
-        "collection_profile": source.profile,
         "retrieved_at": source.retrieved_at,
         "effective_from": source.effective_from or None,
         "last_known_modification": (
@@ -504,7 +488,6 @@ def write_outputs(
             "generated_at": generated_at,
             "snapshot_date": next(iter(snapshot_dates)),
             "snapshot_id": snapshot_id,
-            "collection_profile": sources[0].profile,
             "input_manifest": (
                 RAW_ROOT / snapshot_id / "manifest.csv"
             ).relative_to(ROOT).as_posix(),

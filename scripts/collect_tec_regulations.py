@@ -601,15 +601,6 @@ REGULATIONS = (
     ),
 )
 
-INITIAL_DOCUMENT_IDS = {
-    "tec-rrea-2025",
-    "tec-becas-prestamos",
-    "tec-equiparacion-asignaturas",
-    "tec-residencias-estudiantiles",
-    "tec-defensoria-estudiantil",
-}
-
-
 FORBIDDEN_MARKERS = (
     "Reglamento derogado",
     "Vigente hasta el 31 de diciembre de 2024",
@@ -740,16 +731,8 @@ def parse_args() -> argparse.Namespace:
         "--snapshot-id",
         help=(
             "Snapshot directory identifier. Defaults to the snapshot date; "
-            "may add a lowercase suffix, for example 2026-07-23-expanded."
-        ),
-    )
-    parser.add_argument(
-        "--profile",
-        choices=("initial", "expanded"),
-        default="expanded",
-        help=(
-            "Select the original five-document corpus or the expanded "
-            "25-document corpus."
+            "may add a lowercase suffix if more than one snapshot is "
+            "collected on the same date."
         ),
     )
     return parser.parse_args()
@@ -775,15 +758,6 @@ def main() -> int:
         )
         return 2
 
-    selected_regulations = (
-        tuple(
-            regulation
-            for regulation in REGULATIONS
-            if regulation.document_id in INITIAL_DOCUMENT_IDS
-        )
-        if args.profile == "initial"
-        else REGULATIONS
-    )
     retrieved_at = datetime.now(TIMEZONE).isoformat(timespec="seconds")
     snapshot_dir = OUTPUT_ROOT / snapshot_id
     OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
@@ -800,7 +774,7 @@ def main() -> int:
     ) as temporary_directory:
         staging_dir = Path(temporary_directory)
         try:
-            for regulation in selected_regulations:
+            for regulation in REGULATIONS:
                 destination = staging_dir / regulation.filename
                 print(f"Collecting {regulation.document_id} ...")
                 row = collect(regulation, destination)
@@ -809,7 +783,6 @@ def main() -> int:
                 ).relative_to(ROOT).as_posix()
                 row["snapshot_date"] = snapshot_date
                 row["snapshot_id"] = snapshot_id
-                row["profile"] = args.profile
                 row["retrieved_at"] = retrieved_at
                 rows.append(row)
         except Exception as exc:
@@ -827,7 +800,6 @@ def main() -> int:
             "final_url",
             "snapshot_date",
             "snapshot_id",
-            "profile",
             "retrieved_at",
             "format",
             "language",
@@ -848,10 +820,7 @@ def main() -> int:
 
         staging_dir.replace(snapshot_dir)
 
-    print(
-        f"Wrote {len(rows)} regulations from the {args.profile!r} "
-        f"profile to {snapshot_dir}"
-    )
+    print(f"Wrote {len(rows)} regulations to {snapshot_dir}")
     print(f"Manifest: {snapshot_dir / 'manifest.csv'}")
     return 0
 

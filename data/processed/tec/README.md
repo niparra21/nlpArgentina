@@ -12,10 +12,7 @@ Cada carpeta fechada contiene:
 - `processing_manifest.json`: versión del procesador, hashes, conteos y
   trazabilidad de entradas y salidas.
 
-Las salidas disponibles son:
-
-- `2026-07-23`: 5 documentos y 251 secciones.
-- `2026-07-23-expanded`: 25 documentos y 1 184 secciones.
+La salida `2026-07-23` contiene 25 documentos y 1 184 secciones.
 
 ## Esquema de una sección
 
@@ -38,7 +35,6 @@ Los campos principales son:
 | `source_url` | Página oficial del TEC |
 | `snapshot_date` | Fecha de la captura utilizada |
 | `snapshot_id` | Identificador de la captura o versión del corpus |
-| `collection_profile` | Perfil de recolección: `initial` o `expanded` |
 | `raw_file` | Archivo HTML original |
 | `raw_sha256` | Huella del HTML original |
 | `content_sha256` | Huella del texto normalizado de la sección |
@@ -66,7 +62,7 @@ Los campos principales son:
 Desde la raíz del repositorio:
 
 ```powershell
-python scripts/process_tec_regulations.py --snapshot-id 2026-07-23-expanded
+python scripts/process_tec_regulations.py --snapshot-id 2026-07-23
 ```
 
 El procesador verifica primero los SHA-256 del manifiesto de recolección. También

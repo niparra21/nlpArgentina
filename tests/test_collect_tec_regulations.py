@@ -7,18 +7,16 @@ import hashlib
 import unittest
 
 from scripts.collect_tec_regulations import (
-    INITIAL_DOCUMENT_IDS,
     REGULATIONS,
     ROOT,
 )
 
 
-EXPANDED_SNAPSHOT_ID = "2026-07-23-expanded"
+SNAPSHOT_ID = "2026-07-23"
 
 
 class TecRegulationCollectionTests(unittest.TestCase):
-    def test_collection_profiles_have_expected_sizes(self) -> None:
-        self.assertEqual(len(INITIAL_DOCUMENT_IDS), 5)
+    def test_collection_has_expected_size(self) -> None:
         self.assertEqual(len(REGULATIONS), 25)
 
     def test_inventory_identifiers_files_and_urls_are_unique(self) -> None:
@@ -33,13 +31,13 @@ class TecRegulationCollectionTests(unittest.TestCase):
                 msg=f"Duplicate {attribute}",
             )
 
-    def test_expanded_manifest_matches_inventory(self) -> None:
+    def test_manifest_matches_inventory(self) -> None:
         manifest_path = (
             ROOT
             / "data"
             / "raw"
             / "tec"
-            / EXPANDED_SNAPSHOT_ID
+            / SNAPSHOT_ID
             / "manifest.csv"
         )
         with manifest_path.open(
@@ -59,8 +57,7 @@ class TecRegulationCollectionTests(unittest.TestCase):
 
         for row in rows:
             with self.subTest(document_id=row["document_id"]):
-                self.assertEqual(row["snapshot_id"], EXPANDED_SNAPSHOT_ID)
-                self.assertEqual(row["profile"], "expanded")
+                self.assertEqual(row["snapshot_id"], SNAPSHOT_ID)
                 self.assertEqual(row["status"], "vigente_en_sitio_oficial")
                 self.assertEqual(row["http_status"], "200")
                 self.assertEqual(row["content_type"], "text/html")

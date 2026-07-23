@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-07-23T12:44:59-06:00",
+  "input_manifest": "data/raw/tec/2026-07-23/manifest.csv",
+  "output_file": "data/processed/tec/2026-07-23/sections.jsonl",
+  "output_sha256": "2f5c408124656c289cfd88e388451e798ffc08d17c45f82ffea5fca8a49f88fb",
+  "parser_version": "1.0.0",
+  "snapshot_date": "2026-07-23",
+  "source_documents": [
+    {
+      "document_id": "tec-rrea-2025",
+      "raw_file": "data/raw/tec/2026-07-23/tec-rrea-2025.html",
+      "raw_sha256": "72bdbf0a062831478d015fdb5866c29cdd2ad2d42e43451eb6de83402b1af6d3",
+      "source_url": "https://www.tec.ac.cr/reglamento-regimen-ensenanza-aprendizaje-instituto-tecnologico-costa-rica"
+    },
+    {
+      "document_id": "tec-becas-prestamos",
+      "raw_file": "data/raw/tec/2026-07-23/tec-becas-prestamos.html",
+      "raw_sha256": "ed039f4843f5d034248a178cac25f11511a7f006872e223a38e260b2d5d1e7d7",
+      "source_url": "https://www.tec.ac.cr/reglamento-becas-prestamos-estudiantiles-instituto-tecnologico-costa-rica-sus-reformas"
+    },
+    {
+      "document_id": "tec-equiparacion-asignaturas",
+      "raw_file": "data/raw/tec/2026-07-23/tec-equiparacion-asignaturas.html",
+      "raw_sha256": "58515199b01319136fae6068469dc694c907deac66417df3c0aa6d65874d2c29",
+      "source_url": "https://www.tec.ac.cr/reglamento-equiparacion-asignaturas-instituto-tecnologico-costa-rica"
+    },
+    {
+      "document_id": "tec-residencias-estudiantiles",
+      "raw_file": "data/raw/tec/2026-07-23/tec-residencias-estudiantiles.html",
+      "raw_sha256": "ded0c932dd73a1fdae328640b16359d91c627204e4b5fab10159c25717e96fa7",
+      "source_url": "https://www.tec.ac.cr/reglamento-funcionamiento-programa-residencias-estudiantiles-instituto-tecnologico-costa-rica"
+    },
+    {
+      "document_id": "tec-defensoria-estudiantil",
+      "raw_file": "data/raw/tec/2026-07-23/tec-defensoria-estudiantil.html",
+      "raw_sha256": "fde4828367d4eb414c24f00da8a3cd12736d9827645db87c6c625fd64d319a9c",
+      "source_url": "https://www.tec.ac.cr/reglamento-funcionamiento-defensoria-estudiantil"
+    }
+  ],
+  "statistics": {
+    "articles": 244,
+    "documents": [
+      {
+        "articles": 95,
+        "characters": 98811,
+        "document_id": "tec-rrea-2025",
+        "records": 97,
+        "transitories": 2,
+        "words": 14936
+      },
+      {
+        "articles": 56,
+        "characters": 52152,
+        "document_id": "tec-becas-prestamos",
+        "records": 59,
+        "transitories": 3,
+        "words": 8266
+      },
+      {
+        "articles": 34,
+        "characters": 19603,
+        "document_id": "tec-equiparacion-asignaturas",
+        "records": 34,
+        "transitories": 0,
+        "words": 2985
+      },
+      {
+        "articles": 29,
+        "characters": 41250,
+        "document_id": "tec-residencias-estudiantiles",
+        "records": 31,
+        "transitories": 2,
+        "words": 6477
+      },
+      {
+        "articles": 30,
+        "characters": 15407,
+        "document_id": "tec-defensoria-estudiantil",
+        "records": 30,
+        "transitories": 0,
+        "words": 2394
+      }
+    ],
+    "records": 251,
+    "transitories": 7
+  },
+  "validation": {
+    "expected_counts_verified": true,
+    "input_sha256_verified": true,
+    "nonempty_sections": true,
+    "unique_record_ids": true
+  }
+}

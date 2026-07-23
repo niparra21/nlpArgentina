@@ -22,12 +22,14 @@ ROOT = Path(__file__).resolve().parents[1]
 RAW_ROOT = ROOT / "data" / "raw" / "tec"
 PROCESSED_ROOT = ROOT / "data" / "processed" / "tec"
 TIMEZONE = ZoneInfo("America/Costa_Rica")
-PARSER_VERSION = "1.0.0"
+PARSER_VERSION = "1.1.0"
 HEADING_TAGS = {"h2", "h3", "h4", "h5", "h6"}
 
 ARTICLE_RE = re.compile(
     r"^art[ií]culo\s+"
-    r"(?P<number>\d+(?:\s*(?:-\s*)?bis(?:-\d+)?)?)"
+    r"(?P<number>\d+(?:\s*(?:-\s*)?"
+    r"(?:bis(?:-\d+)?|ter|quater|quinquies|sexies|septies|octies|"
+    r"nonies|decies))?)"
     r"\s*(?:[.:]\s*)?(?P<title>.*)$",
     re.IGNORECASE,
 )
@@ -37,7 +39,9 @@ TRANSITORY_RE = re.compile(
     re.IGNORECASE,
 )
 CHAPTER_RE = re.compile(
-    r"^cap[ií]tulo\s+(?P<number>[IVXLCDM]+|\d+)"
+    r"^(?:t[ií]tulo\s+[IVXLCDM\d]+\s*(?:[.:\-]\s*)?.*?\s+)?"
+    r"cap[ií]tulo\s+"
+    r"(?P<number>[IVXLCDM]+|\d+(?:\s+bis)?|[uú]nic[oa])"
     r"\s*(?:[.:\-]\s*)?(?P<title>.*)$",
     re.IGNORECASE,
 )
@@ -48,7 +52,57 @@ EXPECTED_COUNTS = {
     "tec-equiparacion-asignaturas": {"article": 34, "transitory": 0},
     "tec-residencias-estudiantiles": {"article": 29, "transitory": 2},
     "tec-defensoria-estudiantil": {"article": 30, "transitory": 0},
+    "tec-becas-posgrado": {"article": 24, "transitory": 3},
+    "tec-convivencia-disciplina": {"article": 42, "transitory": 4},
+    "tec-admision-grado": {"article": 43, "transitory": 1},
+    "tec-prueba-aptitud": {"article": 31, "transitory": 1},
+    "tec-graduacion": {"article": 27, "transitory": 0},
+    "tec-tfg-grado": {"article": 26, "transitory": 0},
+    "tec-reconocimiento-grados-titulos": {
+        "article": 33,
+        "transitory": 2,
+    },
+    "tec-horas-estudiante-asistente": {
+        "article": 32,
+        "transitory": 1,
+    },
+    "tec-beca-asistente-especial": {"article": 33, "transitory": 0},
+    "tec-beca-asistente-investigacion": {
+        "article": 14,
+        "transitory": 0,
+    },
+    "tec-fondo-solidario": {"article": 19, "transitory": 1},
+    "tec-financiamiento-exterior": {"article": 23, "transitory": 0},
+    "tec-beca-mauricio-campos": {"article": 22, "transitory": 0},
+    "tec-codigo-electoral-estudiantil": {
+        "article": 146,
+        "transitory": 0,
+    },
+    "tec-reglamento-superior-feitec": {
+        "article": 136,
+        "transitory": 6,
+    },
+    "tec-directorio-asambleas-estudiantiles": {
+        "article": 101,
+        "transitory": 3,
+    },
+    "tec-correo-electronico": {"article": 28, "transitory": 4},
+    "tec-hostigamiento-sexual": {"article": 40, "transitory": 2},
+    "tec-no-discriminacion": {"article": 47, "transitory": 7},
+    "tec-tercer-representante-estudiantil": {
+        "article": 30,
+        "transitory": 1,
+    },
 }
+
+INITIAL_DOCUMENT_IDS = {
+    "tec-rrea-2025",
+    "tec-becas-prestamos",
+    "tec-equiparacion-asignaturas",
+    "tec-residencias-estudiantiles",
+    "tec-defensoria-estudiantil",
+}
+EXPANDED_DOCUMENT_IDS = set(EXPECTED_COUNTS)
 
 
 @dataclass(frozen=True)
@@ -58,6 +112,8 @@ class SourceDocument:
     source_url: str
     canonical_url: str
     snapshot_date: str
+    snapshot_id: str
+    profile: str
     retrieved_at: str
     effective_from: str
     last_known_modification: str
@@ -80,8 +136,21 @@ def normalize_identifier(value: str) -> str:
     return value
 
 
-def load_sources(snapshot_date: str) -> list[SourceDocument]:
-    manifest_path = RAW_ROOT / snapshot_date / "manifest.csv"
+def is_structural_heading(value: str) -> bool:
+    return (
+        value.isupper()
+        or bool(
+            re.match(
+                r"^(?:t[ií]tulo|disposiciones|secci[oó]n)\b",
+                value,
+                flags=re.IGNORECASE,
+            )
+        )
+    )
+
+
+def load_sources(snapshot_id: str) -> list[SourceDocument]:
+    manifest_path = RAW_ROOT / snapshot_id / "manifest.csv"
     if not manifest_path.is_file():
         raise FileNotFoundError(f"Raw manifest not found: {manifest_path}")
 
@@ -100,10 +169,11 @@ def load_sources(snapshot_date: str) -> list[SourceDocument]:
                 raise ValueError(
                     f"Raw SHA-256 mismatch for {row['document_id']}"
                 )
-            if row["snapshot_date"] != snapshot_date:
+            row_snapshot_id = row.get("snapshot_id") or row["snapshot_date"]
+            if row_snapshot_id != snapshot_id:
                 raise ValueError(
                     f"Snapshot mismatch for {row['document_id']}: "
-                    f"{row['snapshot_date']}"
+                    f"{row_snapshot_id}"
                 )
             sources.append(
                 SourceDocument(
@@ -112,6 +182,8 @@ def load_sources(snapshot_date: str) -> list[SourceDocument]:
                     source_url=row["source_url"],
                     canonical_url=row["canonical_url"],
                     snapshot_date=row["snapshot_date"],
+                    snapshot_id=row_snapshot_id,
+                    profile=row.get("profile") or "initial",
                     retrieved_at=row["retrieved_at"],
                     effective_from=row["effective_from"],
                     last_known_modification=row[
@@ -122,14 +194,19 @@ def load_sources(snapshot_date: str) -> list[SourceDocument]:
                 )
             )
 
-    expected_documents = set(EXPECTED_COUNTS)
     actual_documents = {source.document_id for source in sources}
-    if actual_documents != expected_documents:
+    supported_document_sets = (
+        INITIAL_DOCUMENT_IDS,
+        EXPANDED_DOCUMENT_IDS,
+    )
+    if actual_documents not in supported_document_sets:
         raise ValueError(
-            "Unexpected document set. "
-            f"Expected {sorted(expected_documents)}, "
-            f"found {sorted(actual_documents)}"
+            "Unexpected document set. Expected the initial or expanded "
+            f"profile, found {sorted(actual_documents)}"
         )
+    profiles = {source.profile for source in sources}
+    if len(profiles) != 1:
+        raise ValueError(f"Mixed collection profiles: {sorted(profiles)}")
     return sources
 
 
@@ -181,6 +258,8 @@ def build_record(
         "source_url": source.source_url,
         "canonical_url": source.canonical_url,
         "snapshot_date": source.snapshot_date,
+        "snapshot_id": source.snapshot_id,
+        "collection_profile": source.profile,
         "retrieved_at": source.retrieved_at,
         "effective_from": source.effective_from or None,
         "last_known_modification": (
@@ -239,49 +318,81 @@ def parse_document(source: SourceDocument) -> list[dict[str, Any]]:
             chapter_match = CHAPTER_RE.match(visible_text)
             if chapter_match:
                 flush_current()
-                chapter_number = chapter_match.group("number").upper()
+                chapter_number = normalize_identifier(
+                    chapter_match.group("number")
+                ).upper()
                 chapter_title = chapter_match.group("title").strip()
                 chapter_label = visible_text
                 chapter_waiting_for_title = not bool(chapter_title)
                 continue
 
-            article_match = ARTICLE_RE.match(visible_text)
-            if article_match:
-                flush_current()
-                current = {
-                    "record_type": "article",
-                    "section_number": article_match.group("number"),
-                    "section_label": visible_text,
-                    "section_title": article_match.group("title").strip(),
-                    "chapter_number": chapter_number,
-                    "chapter_title": chapter_title,
-                    "chapter_label": chapter_label,
-                    "text_blocks": [],
-                }
-                chapter_waiting_for_title = False
-                continue
+        article_match = ARTICLE_RE.match(visible_text)
+        if article_match:
+            flush_current()
+            inline_text = article_match.group("title").strip()
+            if is_heading:
+                section_label = visible_text
+                section_title = inline_text
+                text_blocks: list[str] = []
+            else:
+                section_label = visible_text[
+                    : article_match.start("title")
+                ].rstrip(" .:")
+                section_title = ""
+                text_blocks = [inline_text] if inline_text else []
+            current = {
+                "record_type": "article",
+                "section_number": article_match.group("number"),
+                "section_label": section_label,
+                "section_title": section_title,
+                "chapter_number": chapter_number,
+                "chapter_title": chapter_title,
+                "chapter_label": chapter_label,
+                "text_blocks": text_blocks,
+            }
+            chapter_waiting_for_title = False
+            continue
 
-            transitory_match = TRANSITORY_RE.match(visible_text)
-            if transitory_match:
-                flush_current()
-                current = {
-                    "record_type": "transitory",
-                    "section_number": transitory_match.group("number"),
-                    "section_label": visible_text,
-                    "section_title": transitory_match.group("title").strip(),
-                    "chapter_number": chapter_number,
-                    "chapter_title": chapter_title,
-                    "chapter_label": chapter_label,
-                    "text_blocks": [],
-                }
-                chapter_waiting_for_title = False
-                continue
+        transitory_match = TRANSITORY_RE.match(visible_text)
+        if transitory_match:
+            flush_current()
+            inline_text = transitory_match.group("title").strip()
+            if is_heading:
+                section_label = visible_text
+                section_title = inline_text
+                text_blocks = []
+            else:
+                section_label = visible_text[
+                    : transitory_match.start("title")
+                ].rstrip(" .:")
+                section_title = ""
+                text_blocks = [inline_text] if inline_text else []
+            current = {
+                "record_type": "transitory",
+                "section_number": transitory_match.group("number"),
+                "section_label": section_label,
+                "section_title": section_title,
+                "chapter_number": chapter_number,
+                "chapter_title": chapter_title,
+                "chapter_label": chapter_label,
+                "text_blocks": text_blocks,
+            }
+            chapter_waiting_for_title = False
+            continue
 
-            if chapter_waiting_for_title and current is None:
-                chapter_title = visible_text
-                chapter_label = f"{chapter_label} {visible_text}"
-                chapter_waiting_for_title = False
-                continue
+        if is_heading and chapter_waiting_for_title and current is None:
+            chapter_title = visible_text
+            chapter_label = f"{chapter_label} {visible_text}"
+            chapter_waiting_for_title = False
+            continue
+
+        if is_heading and is_structural_heading(visible_text):
+            flush_current()
+            chapter_number = ""
+            chapter_title = visible_text
+            chapter_label = visible_text
+            chapter_waiting_for_title = False
+            continue
 
         if current is not None:
             current["text_blocks"].append(visible_text)
@@ -307,7 +418,12 @@ def validate_records(records: list[dict[str, Any]]) -> dict[str, Any]:
         raise ValueError(f"Empty section text: {empty_records}")
 
     document_stats: list[dict[str, Any]] = []
+    present_document_ids = {
+        record["document_id"] for record in records
+    }
     for document_id, expected in EXPECTED_COUNTS.items():
+        if document_id not in present_document_ids:
+            continue
         document_records = [
             record
             for record in records
@@ -356,12 +472,12 @@ def validate_records(records: list[dict[str, Any]]) -> dict[str, Any]:
 
 
 def write_outputs(
-    snapshot_date: str,
+    snapshot_id: str,
     sources: list[SourceDocument],
     records: list[dict[str, Any]],
     stats: dict[str, Any],
 ) -> tuple[Path, Path]:
-    output_dir = PROCESSED_ROOT / snapshot_date
+    output_dir = PROCESSED_ROOT / snapshot_id
     output_dir.mkdir(parents=True, exist_ok=True)
 
     with tempfile.TemporaryDirectory(
@@ -378,12 +494,19 @@ def write_outputs(
 
         sections_bytes = sections_path.read_bytes()
         generated_at = datetime.now(TIMEZONE).isoformat(timespec="seconds")
+        snapshot_dates = {source.snapshot_date for source in sources}
+        if len(snapshot_dates) != 1:
+            raise ValueError(
+                f"Mixed snapshot dates: {sorted(snapshot_dates)}"
+            )
         processing_manifest = {
             "parser_version": PARSER_VERSION,
             "generated_at": generated_at,
-            "snapshot_date": snapshot_date,
+            "snapshot_date": next(iter(snapshot_dates)),
+            "snapshot_id": snapshot_id,
+            "collection_profile": sources[0].profile,
             "input_manifest": (
-                RAW_ROOT / snapshot_date / "manifest.csv"
+                RAW_ROOT / snapshot_id / "manifest.csv"
             ).relative_to(ROOT).as_posix(),
             "output_file": (
                 output_dir / "sections.jsonl"
@@ -428,9 +551,9 @@ def write_outputs(
 
 
 def process_snapshot(
-    snapshot_date: str,
+    snapshot_id: str,
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
-    sources = load_sources(snapshot_date)
+    sources = load_sources(snapshot_id)
     records: list[dict[str, Any]] = []
     for source in sources:
         records.extend(parse_document(source))
@@ -443,9 +566,14 @@ def parse_args() -> argparse.Namespace:
         description="Extract traceable articles from raw TEC regulations."
     )
     parser.add_argument(
+        "--snapshot-id",
         "--snapshot-date",
+        dest="snapshot_id",
         required=True,
-        help="Raw snapshot date in YYYY-MM-DD format.",
+        help=(
+            "Raw snapshot directory identifier. --snapshot-date remains "
+            "available as a backwards-compatible alias."
+        ),
     )
     return parser.parse_args()
 
@@ -453,10 +581,13 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     try:
-        snapshot_date = datetime.strptime(
-            args.snapshot_date, "%Y-%m-%d"
-        ).date().isoformat()
-        sources = load_sources(snapshot_date)
+        snapshot_id = args.snapshot_id
+        if not re.fullmatch(
+            r"\d{4}-\d{2}-\d{2}(?:-[a-z0-9]+)*",
+            snapshot_id,
+        ):
+            raise ValueError("invalid snapshot identifier")
+        sources = load_sources(snapshot_id)
         records: list[dict[str, Any]] = []
         for source in sources:
             document_records = parse_document(source)
@@ -467,7 +598,7 @@ def main() -> int:
             records.extend(document_records)
         stats = validate_records(records)
         sections_path, manifest_path = write_outputs(
-            snapshot_date, sources, records, stats
+            snapshot_id, sources, records, stats
         )
     except Exception as exc:
         print(f"Processing failed: {exc}", file=sys.stderr)

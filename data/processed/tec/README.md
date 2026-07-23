@@ -12,6 +12,11 @@ Cada carpeta fechada contiene:
 - `processing_manifest.json`: versión del procesador, hashes, conteos y
   trazabilidad de entradas y salidas.
 
+Las salidas disponibles son:
+
+- `2026-07-23`: 5 documentos y 251 secciones.
+- `2026-07-23-expanded`: 25 documentos y 1 184 secciones.
+
 ## Esquema de una sección
 
 Los campos principales son:
@@ -32,6 +37,8 @@ Los campos principales son:
 | `citation_label` | Etiqueta legible para citar la fuente |
 | `source_url` | Página oficial del TEC |
 | `snapshot_date` | Fecha de la captura utilizada |
+| `snapshot_id` | Identificador de la captura o versión del corpus |
+| `collection_profile` | Perfil de recolección: `initial` o `expanded` |
 | `raw_file` | Archivo HTML original |
 | `raw_sha256` | Huella del HTML original |
 | `content_sha256` | Huella del texto normalizado de la sección |
@@ -41,10 +48,14 @@ Los campos principales son:
 - Se selecciona el bloque normativo principal de cada página.
 - Los artículos se reconocen por su encabezado textual, no por depender de un
   nivel fijo como `h3` o `h4`.
+- Los artículos que comienzan dentro de un párrafo también se reconocen y su
+  contenido se separa del rótulo.
 - Los capítulos que separan el número y el título en dos encabezados se
   reconstruyen.
-- Los artículos `bis` conservan un identificador normalizado, por ejemplo
-  `15-bis`.
+- Los artículos con sufijos como `bis`, `ter`, `quater`, `quinquies` y `sexies`
+  conservan identificadores normalizados.
+- Los encabezados estructurales sin número de capítulo se conservan como
+  contexto de la sección.
 - Los transitorios se mantienen como registros independientes.
 - Las notas de reforma contenidas dentro de un artículo se conservan.
 - Los menús, encabezados y pies del sitio no pasan al corpus procesado.
@@ -55,7 +66,7 @@ Los campos principales son:
 Desde la raíz del repositorio:
 
 ```powershell
-python scripts/process_tec_regulations.py --snapshot-date 2026-07-23
+python scripts/process_tec_regulations.py --snapshot-id 2026-07-23-expanded
 ```
 
 El procesador verifica primero los SHA-256 del manifiesto de recolección. También

@@ -239,7 +239,6 @@ def main(args: argparse.Namespace) -> dict[str, Any]:
     model = SentenceTransformer(
         manifest["model_name"],
         revision=manifest["model_revision"],
-        local_files_only=True,
     )
 
     results: list[dict[str, Any]] = []

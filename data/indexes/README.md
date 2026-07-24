@@ -29,14 +29,15 @@ dividen, pero todos sus fragmentos conservan el `record_id` original.
 
 ## Construir el índice
 
-Desde la raíz del repositorio y con el entorno virtual activado:
+El índice de la captura `2026-07-23` ya está incluido en el repositorio. Para
+crear un índice cuando todavía no existe, desde la raíz y con el entorno virtual
+activado:
 
 ```powershell
 python scripts/build_vector_index.py
 ```
 
-El comando se niega a sobrescribir un índice existente. Para regenerarlo de
-forma intencional:
+Para reproducir y reemplazar el índice incluido de forma intencional:
 
 ```powershell
 python scripts/build_vector_index.py --force
@@ -73,3 +74,5 @@ python scripts/search_corpus.py `
 
 El buscador convierte la pregunta en `query: ...`, calcula la similitud contra
 todos los vectores y muestra los cinco artículos distintos con mayor puntuación.
+En una computadora nueva, la primera búsqueda descarga la revisión exacta del
+modelo si todavía no está en la caché local.

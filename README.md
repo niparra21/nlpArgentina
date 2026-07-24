@@ -31,10 +31,17 @@ artículos y las preguntas en vectores normalizados. La versión exacta del mode
 y las huellas de los archivos quedan registradas para reproducibilidad.
 
 ```powershell
-python scripts/build_vector_index.py
 python scripts/search_corpus.py `
   "¿Cuántas horas puede trabajar un estudiante asistente?"
-python scripts/evaluate_retrieval.py
+python scripts/evaluate_retrieval.py --force
+```
+
+El índice y la evaluación de referencia ya están incluidos. Para reconstruir el
+índice completo desde el corpus y reproducir el experimento:
+
+```powershell
+python scripts/build_vector_index.py --force
+python scripts/evaluate_retrieval.py --force
 ```
 
 - [Construcción y estructura del índice](data/indexes/README.md)

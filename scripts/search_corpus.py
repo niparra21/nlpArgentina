@@ -43,7 +43,6 @@ def main(args: argparse.Namespace) -> list[dict]:
     model = SentenceTransformer(
         manifest["model_name"],
         revision=manifest["model_revision"],
-        local_files_only=True,
     )
     hits, elapsed_ms = search_question(
         model,

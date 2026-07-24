@@ -1,0 +1,29 @@
+{
+  "batch_size": 32,
+  "chunks": 1259,
+  "chunks_file": "chunks.jsonl",
+  "chunks_sha256": "f9a31762dbfa7ed9745a0323d94e86c5b351a094f3e284360c479206e9fd52f9",
+  "embeddings_dtype": "float32",
+  "embeddings_file": "embeddings.npy",
+  "embeddings_sha256": "3a1e8e0cddcb8d07aa577ebf01d83010e7cf512f77f7e4d49857b92e656bcfc6",
+  "generated_at": "2026-07-23T20:43:49-06:00",
+  "max_input_tokens": 480,
+  "model_max_sequence_length": 512,
+  "model_name": "intfloat/multilingual-e5-small",
+  "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "normalized_embeddings": true,
+  "overlap_tokens": 50,
+  "packages": {
+    "numpy": "2.3.2",
+    "sentence-transformers": "5.6.1",
+    "torch": "2.13.0+cpu"
+  },
+  "schema_version": "1.0.0",
+  "similarity": "dot_product_equivalent_to_cosine",
+  "snapshot_id": "2026-07-23",
+  "source_file": "data/processed/tec/2026-07-23/sections.jsonl",
+  "source_records": 1184,
+  "source_sha256": "6ee3dc6ac0a6e9d34ad0a2dc31fff7f479b447f19d56ea726a189c406502b4ff",
+  "split_records": 51,
+  "vector_dimension": 384
+}

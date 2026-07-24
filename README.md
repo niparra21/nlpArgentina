@@ -17,10 +17,28 @@ segunda capa derivada organiza el contenido por artículos y transitorios.
 ## Reproducir
 
 ```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 python scripts/process_tec_regulations.py --snapshot-id 2026-07-23
 python -m unittest discover -s tests
 ```
+
+## Recuperación semántica
+
+El buscador local usa `intfloat/multilingual-e5-small` para convertir los
+artículos y las preguntas en vectores normalizados. La versión exacta del modelo
+y las huellas de los archivos quedan registradas para reproducibilidad.
+
+```powershell
+python scripts/build_vector_index.py
+python scripts/search_corpus.py `
+  "¿Cuántas horas puede trabajar un estudiante asistente?"
+python scripts/evaluate_retrieval.py
+```
+
+- [Construcción y estructura del índice](data/indexes/README.md)
+- [Evaluación y significado de las métricas](results/retrieval/README.md)
 
 La información almacenada se utiliza únicamente con fines de investigación. Para
 tomar decisiones académicas o administrativas se debe consultar siempre la fuente

@@ -1,0 +1,66 @@
+{
+  "answerable_questions": 33,
+  "by_question_type": {
+    "direct": {
+      "metrics_at_5": {
+        "complete_evidence_rate": 0.92,
+        "hit_rate": 0.92,
+        "mean_evidence_recall": 0.92,
+        "mean_reciprocal_rank": 0.8233333333333334
+      },
+      "questions": 25
+    },
+    "multi_section": {
+      "metrics_at_5": {
+        "complete_evidence_rate": 0.625,
+        "hit_rate": 1.0,
+        "mean_evidence_recall": 0.8125,
+        "mean_reciprocal_rank": 0.6916666666666667
+      },
+      "questions": 8
+    }
+  },
+  "generated_at": "2026-07-23T20:45:06-06:00",
+  "index_manifest": "data/indexes/tec/2026-07-23/multilingual-e5-small/index_manifest.json",
+  "index_manifest_sha256": "b832bba614cdc8cc352c768fef896848c70d8adc7391da9cdbba04dbf43b814c",
+  "latency_ms": {
+    "maximum": 131.91480000023148,
+    "mean": 28.027184999882593,
+    "median": 22.24545000171929,
+    "minimum": 16.088400003354764
+  },
+  "metrics": {
+    "at_1": {
+      "complete_evidence_rate": 0.5757575757575758,
+      "hit_rate": 0.696969696969697,
+      "mean_evidence_recall": 0.6363636363636364,
+      "mean_reciprocal_rank": 0.696969696969697
+    },
+    "at_3": {
+      "complete_evidence_rate": 0.7878787878787878,
+      "hit_rate": 0.8787878787878788,
+      "mean_evidence_recall": 0.8282828282828283,
+      "mean_reciprocal_rank": 0.7777777777777778
+    },
+    "at_5": {
+      "complete_evidence_rate": 0.8484848484848485,
+      "hit_rate": 0.9393939393939394,
+      "mean_evidence_recall": 0.8939393939393939,
+      "mean_reciprocal_rank": 0.7914141414141415
+    }
+  },
+  "model_name": "intfloat/multilingual-e5-small",
+  "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "questions": 40,
+  "questions_file": "data/evaluation/questions.jsonl",
+  "questions_sha256": "5fb065bc2d8cf175dbdbffb41e9e231e3a61393c3d50eb9043b7abb4e9f95f6a",
+  "snapshot_id": "2026-07-23",
+  "top_k": 5,
+  "unanswerable_max_score": {
+    "maximum": 0.8651514053344727,
+    "mean": 0.8433584911482674,
+    "minimum": 0.8265149593353271,
+    "note": "Retrieval always returns candidates. These scores are descriptive and do not yet define an abstention threshold."
+  },
+  "unanswerable_questions": 7
+}

@@ -1,0 +1,116 @@
+{
+  "configuration": {
+    "generator_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+    "generator_model": "qwen3.5:9b",
+    "generator_parameter_size": "9.7B",
+    "generator_quantization": "Q4_K_M",
+    "index_directory": "data/indexes/tec/2026-07-23/multilingual-e5-small",
+    "index_manifest_sha256": "b832bba614cdc8cc352c768fef896848c70d8adc7391da9cdbba04dbf43b814c",
+    "keep_alive": "5m",
+    "num_ctx": 8192,
+    "num_predict": 512,
+    "ollama_url": "http://localhost:11434",
+    "ollama_version": "0.32.5",
+    "retrieval_model": "intfloat/multilingual-e5-small",
+    "retrieval_model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "seed": 42,
+    "snapshot_id": "2026-07-23",
+    "temperature": 0.1,
+    "thinking": false,
+    "top_k": 5,
+    "unique_records": false
+  },
+  "finished_at": "2026-07-28T13:34:52.934-06:00",
+  "generation": {
+    "context_characters": 8406,
+    "done_reason": "stop",
+    "model_load_ms": 300.2474,
+    "ollama_total_ms": 2589.759,
+    "output_tokens": 24,
+    "prompt_characters": 9333,
+    "prompt_tokens": 2274,
+    "request_latency_ms": 4624.706299999843,
+    "source_count": 5,
+    "tokens_per_second": 45.78440125449259
+  },
+  "question": "¿Cuál es el precio actual del almuerzo en la soda del Campus Tecnológico Central?",
+  "result": {
+    "answer": "No encontrado en el contexto.",
+    "citation_count": 0,
+    "citations": [],
+    "citations_valid": true,
+    "cited_sources": [],
+    "status": "not_found"
+  },
+  "retrieval": {
+    "model_load_ms": 3785.9800000001087,
+    "returned_sources": 5,
+    "search_ms": 38.90369999999166,
+    "sources": [
+      {
+        "chunk_id": "tec-residencias-estudiantiles::article-17::chunk-002",
+        "citation_label": "Reglamento para el Funcionamiento del Programa de Residencias Estudiantiles del Instituto Tecnológico de Costa Rica, Artículo 17",
+        "document_id": "tec-residencias-estudiantiles",
+        "document_title": "Reglamento para el Funcionamiento del Programa de Residencias Estudiantiles del Instituto Tecnológico de Costa Rica",
+        "rank": 1,
+        "record_id": "tec-residencias-estudiantiles::article-17",
+        "score": 0.8325172066688538,
+        "source_id": "F1",
+        "source_url": "https://www.tec.ac.cr/reglamento-funcionamiento-programa-residencias-estudiantiles-instituto-tecnologico-costa-rica",
+        "text": ", Consejo Institucional o el Tribunal Institucional Electoral, a quienes se reducirá a 9 créditos o quienes hayan sido admitidos por medio de programas especiales (Admisión Restringida u otra) quienes se regirán por la normativa de ese programa. En caso de estudiantes con igualdad de situación socioeconómica se le dará prioridad al estudiante de mayor dificultad de acceso al campus, según su lugar de procedencia. d. Carga Académica: Matricular un mínimo de doce créditos al semestre o el máximo de créditos a que tenga derecho según sea el plan de estudios. En el caso de estudiantes de primer ingreso se permitirá una matrícula mínima de diez créditos. Para estudiantes que sean representantes estudiantiles ante el Directorio de la Asamblea Institucional Representativa, Consejo Institucional o el Tribunal Institucional Electoral, se rebajará esta carga académica a 9 créditos. Artículo así reformado por acuerdo del Consejo Institucional, Sesión Ordinaria No. 3275, Artículo 14, del 10 de agosto de 2022. Publicado en fecha 17 de agosto del 2022 mediante la Gaceta Número 951-2022 de fecha 11 de agosto del 2022."
+      },
+      {
+        "chunk_id": "tec-residencias-estudiantiles::article-5::chunk-001",
+        "citation_label": "Reglamento para el Funcionamiento del Programa de Residencias Estudiantiles del Instituto Tecnológico de Costa Rica, Artículo 5",
+        "document_id": "tec-residencias-estudiantiles",
+        "document_title": "Reglamento para el Funcionamiento del Programa de Residencias Estudiantiles del Instituto Tecnológico de Costa Rica",
+        "rank": 2,
+        "record_id": "tec-residencias-estudiantiles::article-5",
+        "score": 0.8278020620346069,
+        "source_id": "F2",
+        "source_url": "https://www.tec.ac.cr/reglamento-funcionamiento-programa-residencias-estudiantiles-instituto-tecnologico-costa-rica",
+        "text": "El Programa de Residencias Estudiantiles del Campus Tecnológico Central estará a cargo del o la Vicerrector (a) de Vida Estudiantil y Servicios Académicos por medio del Departamento de Becas y Gestión Social. El Programa de Residencias Estudiantiles del Campus Tecnológico Local de San Carlos estará a cargo del o la directora (a) del Campus, bajo el criterio de desconcentración técnica y administrativa establecido en el Estatuto Orgánico, por medio del Departamento de Vida Estudiantil y Servicios Académicos. Así reformado por acuerdo del Consejo Institucional, Sesión Ordinaria Número 3302, artículo 12 del 22 de marzo del 2023. Publicado en fecha 27 de marzo del 2023 mediante la Gaceta Número 1072-2023 del 9 de marzo del 2023. Artículo anteriormente reformado por acuerdo del Consejo Institucional, Sesión Ordinaria No. 3211, Artículo 14, del 07 de abril de 2021. Publicado en fecha 9 de abril del 2021 mediante la Gaceta Número 752-2021 de fecha 8 de abril del 2021."
+      },
+      {
+        "chunk_id": "tec-residencias-estudiantiles::article-18::chunk-002",
+        "citation_label": "Reglamento para el Funcionamiento del Programa de Residencias Estudiantiles del Instituto Tecnológico de Costa Rica, Artículo 18",
+        "document_id": "tec-residencias-estudiantiles",
+        "document_title": "Reglamento para el Funcionamiento del Programa de Residencias Estudiantiles del Instituto Tecnológico de Costa Rica",
+        "rank": 3,
+        "record_id": "tec-residencias-estudiantiles::article-18",
+        "score": 0.8259616494178772,
+        "source_id": "F3",
+        "source_url": "https://www.tec.ac.cr/reglamento-funcionamiento-programa-residencias-estudiantiles-instituto-tecnologico-costa-rica",
+        "text": "desarrolladas por el o la Encargado (a) de Residencias y el Consejo de Residentes y haber demostrado un adecuado desempeño tanto en la organización como en la convivencia estudiantil. d. Cualquier otro criterio no contemplado en este reglamento. Artículo así reformado por acuerdo del Consejo Institucional, Sesión Ordinaria No. 3275, Artículo 14, del 10 de agosto de 2022. Publicado en fecha 17 de agosto del 2022 mediante la Gaceta Número 951-2022 de fecha 11 de agosto del 2022."
+      },
+      {
+        "chunk_id": "tec-residencias-estudiantiles::article-17::chunk-001",
+        "citation_label": "Reglamento para el Funcionamiento del Programa de Residencias Estudiantiles del Instituto Tecnológico de Costa Rica, Artículo 17",
+        "document_id": "tec-residencias-estudiantiles",
+        "document_title": "Reglamento para el Funcionamiento del Programa de Residencias Estudiantiles del Instituto Tecnológico de Costa Rica",
+        "rank": 4,
+        "record_id": "tec-residencias-estudiantiles::article-17",
+        "score": 0.8229706883430481,
+        "source_id": "F4",
+        "source_url": "https://www.tec.ac.cr/reglamento-funcionamiento-programa-residencias-estudiantiles-instituto-tecnologico-costa-rica",
+        "text": "El ingreso al Programa de Residencias Estudiantiles se otorgará utilizando la totalidad de los criterios que se definen a continuación, siendo su prioridad el orden que aquí se establece y no siendo estos criterios excluyentes. a. Condición Socio Económica del o la Estudiante: Se le dará alojamiento a aquellos estudiantes que por su situación socioeconómica, reúnan los requisitos establecidos por la institución para ser beneficiarios del programa. b. Lugar de Procedencia: Los servicios se destinarán prioritariamente a aquellas personas estudiantes cuyo lugar de residencia no les permita trasladarse diariamente a las instalaciones institucionales donde se imparte su carrera, ya sea porque proviene de una zona de difícil acceso o alejada del campus. Inciso así reformado por acuerdo del Consejo Institucional, Sesión Ordinaria Número 3302, artículo 12 del 22 de marzo del 2023. Publicado en fecha 27 de marzo del 2023 mediante la Gaceta Número 1072-2023 del 9 de marzo del 2023. Rendimiento Académico: a. Para otorgarle el servicio al o la estudiante de primer ingreso se considerará el puntaje de admisión, dándole prioridad a los(as) estudiantes del Programa de Admisión Restringida o Abierta Especial, u otro dispuesto por la institución, o bien, al puntaje mayor. b. Para los(as) estudiantes que entren por exención del examen de admisión, se considerará su promedio de ingreso transformándolo a una escala equivalente al puntaje de admisión y competirá por el alojamiento con todos los demás estudiantes de primer ingreso. c. El resto de estudiantes deberá aprobar doce créditos mínimo en el semestre ordinario inmediato anterior a excepción de las y los estudiantes que sean representantes estudiantiles ante el Directorio de la Asamblea Institucional Representativa, Consejo Institucional o el Tribunal Institucional Electoral, a quienes se reducirá a 9 créditos o quienes hayan sido admitidos por medio de programas especiales (Admisión Restringida u otra) quienes se regirán por la normativa de ese programa"
+      },
+      {
+        "chunk_id": "tec-residencias-estudiantiles::article-22::chunk-001",
+        "citation_label": "Reglamento para el Funcionamiento del Programa de Residencias Estudiantiles del Instituto Tecnológico de Costa Rica, Artículo 22",
+        "document_id": "tec-residencias-estudiantiles",
+        "document_title": "Reglamento para el Funcionamiento del Programa de Residencias Estudiantiles del Instituto Tecnológico de Costa Rica",
+        "rank": 5,
+        "record_id": "tec-residencias-estudiantiles::article-22",
+        "score": 0.8218674063682556,
+        "source_id": "F5",
+        "source_url": "https://www.tec.ac.cr/reglamento-funcionamiento-programa-residencias-estudiantiles-instituto-tecnologico-costa-rica",
+        "text": "Son obligaciones de los(as) residentes: Inciso a) derogado por acuerdo del Consejo Institucional, Sesión Ordinaria No. 3291, Artículo 9, del 30 de noviembre de 2022. Publicado en fecha 7 de diciembre del 2022 mediante la Gaceta Número 1016-2022 de fecha 6 de diciembre del 2022. b. Reportar a la o el Encargado cualquier anomalía que se presente en relación con la cuota de mantenimiento de residencias. c. Reportar al o la Encargado (a) cuando algún compañero del cuarto o Núcleo Habitacional se ausenta por más de siete días o hace uso irregular del beneficio. d. Comunicar al o la Encargado (a) con 10 días hábiles de anticipación el retiro del Programa y hacer entrega de las llaves del dormitorio con todos los activos asignados y requerimientos del aseo. e. Contribuir al mantenimiento del aseo y ornato del dormitorio, los pasillos, cocinas, servicios sanitarios, baños, salas de estar, cuartos de pilas y áreas aledañas a los edificios de Residencias. f. Hacer uso sólo del dormitorio que se le ha asignado y no permitir la permanencia de personas ajenas al programa sin la autorización respectiva. g. Utilizar la planta física y zonas verdes de acuerdo CON las normas establecidas para ese fin. h. Firmar anualmente las “Condiciones de préstamo para el uso de la Residencia Estudiantil”. i. Respetar las ideas, la dignidad e integridad física y los bienes materiales de los y las demás estudiantes residentes. j. Respetar las disposiciones sobre la prestación del servicio establecidas en las Condiciones de préstamo para el uso de la Residencia Estudiantil” y el presente Reglamento. k. Informar aL o la Encargado (a) sobre el período y lugar en donde realizará su práctica de especialidad para"
+      }
+    ]
+  },
+  "run_id": "rag-20260728T133440-328448",
+  "schema_version": "1.0.0",
+  "started_at": "2026-07-28T13:34:40.328-06:00",
+  "total_pipeline_ms": 12606.286999999838
+}

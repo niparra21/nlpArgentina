@@ -319,6 +319,7 @@ def search_question(
     question: str,
     *,
     top_k: int = 5,
+    unique_records: bool = True,
 ) -> tuple[list[dict[str, Any]], float]:
     """Encode and search one question, returning hits and elapsed milliseconds."""
 
@@ -329,7 +330,7 @@ def search_question(
         chunks,
         query_vector,
         top_k=top_k,
-        unique_records=True,
+        unique_records=unique_records,
     )
     elapsed_ms = (perf_counter() - started) * 1000
     return hits, elapsed_ms

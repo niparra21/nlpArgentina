@@ -1,0 +1,124 @@
+{
+  "configuration": {
+    "generator_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+    "generator_model": "qwen3.5:9b",
+    "generator_parameter_size": "9.7B",
+    "generator_quantization": "Q4_K_M",
+    "index_directory": "data/indexes/tec/2026-07-23/multilingual-e5-small",
+    "index_manifest_sha256": "b832bba614cdc8cc352c768fef896848c70d8adc7391da9cdbba04dbf43b814c",
+    "keep_alive": "5m",
+    "num_ctx": 8192,
+    "num_predict": 512,
+    "ollama_url": "http://localhost:11434",
+    "ollama_version": "0.32.5",
+    "retrieval_model": "intfloat/multilingual-e5-small",
+    "retrieval_model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "seed": 42,
+    "snapshot_id": "2026-07-23",
+    "temperature": 0.1,
+    "thinking": false,
+    "top_k": 5,
+    "unique_records": false
+  },
+  "finished_at": "2026-07-28T13:34:03.769-06:00",
+  "generation": {
+    "context_characters": 7710,
+    "done_reason": "stop",
+    "model_load_ms": 303.076,
+    "ollama_total_ms": 4330.2468,
+    "output_tokens": 131,
+    "prompt_characters": 8705,
+    "prompt_tokens": 1905,
+    "request_latency_ms": 6376.293499999974,
+    "source_count": 5,
+    "tokens_per_second": 50.690670053267766
+  },
+  "question": "¿En qué plazo y por cuáles medios puede una persona estudiante solicitar la reposición de una evaluación que no realizó por una ausencia justificada?",
+  "result": {
+    "answer": "La solicitud debe presentarse en el plazo de tres días hábiles siguientes a la aplicación de la evaluación, personalmente, mediante correo electrónico remitido a la cuenta oficial de la Institución o por medio de una persona autorizada [F2]. En casos donde la estudiante se encuentre imposibilitada por causas de salud para realizar el trámite en el plazo establecido (demostrado con constancia), podrá hacerlo extemporáneamente ante su docente o la dirección/coordinación respectiva en los primeros tres días hábiles posteriores a su recuperación [F2].",
+    "citation_count": 1,
+    "citations": [
+      "F2"
+    ],
+    "citations_valid": true,
+    "cited_sources": [
+      {
+        "citation_label": "Reglamento del Régimen Enseñanza-Aprendizaje del Instituto Tecnológico de Costa Rica, Artículo 66. De las ausencias justificadas a actividades de evaluación",
+        "source_id": "F2",
+        "source_url": "https://www.tec.ac.cr/reglamento-regimen-ensenanza-aprendizaje-instituto-tecnologico-costa-rica"
+      }
+    ],
+    "status": "answered"
+  },
+  "retrieval": {
+    "model_load_ms": 3735.694000000194,
+    "returned_sources": 5,
+    "search_ms": 34.02159999996002,
+    "sources": [
+      {
+        "chunk_id": "tec-rrea-2025::article-66::chunk-002",
+        "citation_label": "Reglamento del Régimen Enseñanza-Aprendizaje del Instituto Tecnológico de Costa Rica, Artículo 66. De las ausencias justificadas a actividades de evaluación",
+        "document_id": "tec-rrea-2025",
+        "document_title": "Reglamento del Régimen Enseñanza-Aprendizaje del Instituto Tecnológico de Costa Rica",
+        "rank": 1,
+        "record_id": "tec-rrea-2025::article-66",
+        "score": 0.8888481855392456,
+        "source_id": "F1",
+        "source_url": "https://www.tec.ac.cr/reglamento-regimen-ensenanza-aprendizaje-instituto-tecnologico-costa-rica",
+        "text": "no se consideran suficiente motivo para justificar la ausencia, la persona docente asignará a la persona estudiante la nota mínima de la escala (cero). En caso de que la persona docente no acepte la justificación presentada, la persona estudiante tiene la opción de presentar un recurso de revocatoria ante la persona docente dentro de los cinco días hábiles posteriores al rechazo. La persona docente tendrá cinco días hábiles para resolver. También la persona estudiante podrá interponer ante la Dirección o Coordinación de la dependencia o subdependencia que imparte la asignatura un recurso de apelación, dentro de los cinco días hábiles posteriores a la entrega de la resolución de la revocatoria por parte de la persona docente. La dirección o coordinación cuenta con diez días hábiles para resolver, dando por agotada la vía administrativa. De ser necesario, la Dirección o Coordinación de la dependencia o subdependencia podrá solicitar apoyo a otras instancias institucionales quienes tendrán 5 días hábiles para emitir su criterio, una vez enviada copia del expediente completo."
+      },
+      {
+        "chunk_id": "tec-rrea-2025::article-66::chunk-001",
+        "citation_label": "Reglamento del Régimen Enseñanza-Aprendizaje del Instituto Tecnológico de Costa Rica, Artículo 66. De las ausencias justificadas a actividades de evaluación",
+        "document_id": "tec-rrea-2025",
+        "document_title": "Reglamento del Régimen Enseñanza-Aprendizaje del Instituto Tecnológico de Costa Rica",
+        "rank": 2,
+        "record_id": "tec-rrea-2025::article-66",
+        "score": 0.8778630495071411,
+        "source_id": "F2",
+        "source_url": "https://www.tec.ac.cr/reglamento-regimen-ensenanza-aprendizaje-instituto-tecnologico-costa-rica",
+        "text": "La persona estudiante podrá solicitar a la persona docente que se le efectúen las evaluaciones que no tuvo oportunidad de realizar siempre que cumpla con alguna de las siguientes condiciones: a. Enfermedad comprobada de la persona estudiante por profesional competente. b. Imposibilidad de asistir demostrada mediante constancia emitida por autoridad competente. c. Fallecimiento constatado de pareja o parientes hasta segundo grado de consanguinidad o de una persona con la que haya tenido una relación parental análoga o una relación afectiva. d. Condición de maternidad o paternidad de la persona estudiante, sea por embarazo, nacimiento o adopción, cuido, enfermedad u otra situación constatada. e. Participación de la persona estudiante en actividades avaladas por la Vicerrectoría de Docencia, la Vicerrectoría de Vida Estudiantil y Servicios Académicos o la Dirección de Posgrado. f. Cualquier otra causa que a criterio de la persona docente sea justificante. Esta solicitud se debe presentar en el plazo de tres días hábiles siguientes a la aplicación de la evaluación, personalmente, mediante correo electrónico remitido a la cuenta oficial de la Institución o por medio de una persona autorizada. En casos en los que la persona estudiante se encuentre imposibilitada por causas de salud para realizar el trámite en el plazo establecido, demostrado mediante constancia emitida por autoridad competente, podrá realizar el trámite de forma extemporánea ante la persona docente o la dirección o coordinación de la instancia respectiva en los primeros tres días hábiles posteriores a su recuperación. La persona docente deberá resolver la solicitud en un plazo no mayor a tres días hábiles, posteriores a la presentación de ésta. Si no se presenta la solicitud en el período establecido o si las causas expuestas no se consideran suficiente motivo para justificar la ausencia, la persona docente asignará a la persona estudiante la nota mínima de la escala (cero). En caso de que la persona docente no acepte la justificación presentada, la persona"
+      },
+      {
+        "chunk_id": "tec-rrea-2025::article-83::chunk-001",
+        "citation_label": "Reglamento del Régimen Enseñanza-Aprendizaje del Instituto Tecnológico de Costa Rica, Artículo 83. De la reprobación por ausencias",
+        "document_id": "tec-rrea-2025",
+        "document_title": "Reglamento del Régimen Enseñanza-Aprendizaje del Instituto Tecnológico de Costa Rica",
+        "rank": 3,
+        "record_id": "tec-rrea-2025::article-83",
+        "score": 0.8760116100311279,
+        "source_id": "F3",
+        "source_url": "https://www.tec.ac.cr/reglamento-regimen-ensenanza-aprendizaje-instituto-tecnologico-costa-rica",
+        "text": "La persona estudiante que acumule hasta un 15% de ausencias en un curso de asistencia obligatoria se considerará reprobada y, para los efectos de actas de calificaciones, la asignatura aparecerá con las siglas RPA (Reprobado por ausencias) y con la nota que le corresponda de acuerdo con los criterios de evaluación establecidos para dicho curso. Se exceptuarán aquellos casos de personas estudiantes próximas a graduarse que trabajan y con quienes la persona docente haya acordado ajustes operativos (metodológicos y evaluativos) debido a su condición de haber reprobado dos o más veces la asignatura, o según lo indicado en este reglamento sobre las actividades prácticas. Estos ajustes acordados deberán constar por escrito."
+      },
+      {
+        "chunk_id": "tec-rrea-2025::article-70::chunk-001",
+        "citation_label": "Reglamento del Régimen Enseñanza-Aprendizaje del Instituto Tecnológico de Costa Rica, Artículo 70. De la solicitud de revisión de resultados de las evaluaciones",
+        "document_id": "tec-rrea-2025",
+        "document_title": "Reglamento del Régimen Enseñanza-Aprendizaje del Instituto Tecnológico de Costa Rica",
+        "rank": 4,
+        "record_id": "tec-rrea-2025::article-70",
+        "score": 0.8723930716514587,
+        "source_id": "F4",
+        "source_url": "https://www.tec.ac.cr/reglamento-regimen-ensenanza-aprendizaje-instituto-tecnologico-costa-rica",
+        "text": "La persona estudiante podrá presentar un recurso de revocatoria a su docente por escrito, por medios físicos o digitales, para solicitar la revisión de la calificación de los instrumentos aplicados en actividades de evaluación, dentro de los tres días hábiles posteriores a la notificación de los resultados obtenidos. La persona docente deberá dar su respuesta durante los tres días hábiles siguientes. En caso de respuesta negativa, la persona estudiante podrá apelar la decisión ante la coordinación de la subdependencia o en su defecto ante la Dirección de la dependencia que imparte la asignatura, en un plazo no mayor a tres días hábiles a partir de la fecha en que vence el período de respuesta de su docente. La Dirección o la Coordinación respectiva deberá resolver la apelación dentro de los cinco días hábiles siguientes. El Consejo de la dependencia o subdependencia respectiva actuará como órgano en alzada, la cual resolverá dentro de los diez días hábiles siguientes y agotará la vía administrativa."
+      },
+      {
+        "chunk_id": "tec-rrea-2025::article-67::chunk-001",
+        "citation_label": "Reglamento del Régimen Enseñanza-Aprendizaje del Instituto Tecnológico de Costa Rica, Artículo 67. De la autorización de ausencias en casos extraordinarios",
+        "document_id": "tec-rrea-2025",
+        "document_title": "Reglamento del Régimen Enseñanza-Aprendizaje del Instituto Tecnológico de Costa Rica",
+        "rank": 5,
+        "record_id": "tec-rrea-2025::article-67",
+        "score": 0.8707860708236694,
+        "source_id": "F5",
+        "source_url": "https://www.tec.ac.cr/reglamento-regimen-ensenanza-aprendizaje-instituto-tecnologico-costa-rica",
+        "text": "El Instituto otorgará a la persona estudiante permiso para ausentarse de las responsabilidades académicas por el lapso de cinco días hábiles, ampliable según análisis y recomendación de la persona que ejerza la Vicerrectoría de Vida Estudiantil y Servicios Académicos, en los días subsiguientes inmediatos al evento constatado, por el fallecimiento de parientes hasta segundo grado de consanguinidad o de una persona con la que haya tenido una relación parental análoga o una relación afectiva, cónyuge, conviviente de hecho, novio o novia. La persona estudiante tendrá derecho a que se le repongan las actividades de evaluación realizadas durante ese periodo, para lo cual deberá plantear la solicitud a su docente según lo establecido en este reglamento para la justificación de ausencias a actividades de evaluación y adjuntar la documentación correspondiente."
+      }
+    ]
+  },
+  "run_id": "rag-20260728T133349-489355",
+  "schema_version": "1.0.0",
+  "started_at": "2026-07-28T13:33:49.489-06:00",
+  "total_pipeline_ms": 14280.486999999994
+}

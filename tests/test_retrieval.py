@@ -7,7 +7,12 @@ import unittest
 import numpy as np
 
 from scripts.evaluate_retrieval import metrics_at_k
-from scripts.retrieval import chunk_section, embedding_header, rank_chunks
+from scripts.retrieval import (
+    chunk_section,
+    embedding_header,
+    rank_chunks,
+    search_question,
+)
 
 
 class WhitespaceTokenizer:
@@ -144,6 +149,39 @@ class RankingTests(unittest.TestCase):
             ["record-a", "record-b", "record-c"],
         )
         self.assertEqual(hits[0]["chunk_id"], "a-1")
+
+    def test_search_can_keep_multiple_chunks_from_same_record(self) -> None:
+        class ExampleModel:
+            @staticmethod
+            def encode(*args, **kwargs) -> np.ndarray:
+                del args, kwargs
+                return np.array([[1.0, 0.0]], dtype=np.float32)
+
+        embeddings = np.array(
+            [
+                [1.0, 0.0],
+                [0.9, 0.1],
+                [0.0, 1.0],
+            ],
+            dtype=np.float32,
+        )
+        chunks = [
+            {"chunk_id": "a-1", "record_id": "record-a"},
+            {"chunk_id": "a-2", "record_id": "record-a"},
+            {"chunk_id": "b-1", "record_id": "record-b"},
+        ]
+        hits, _ = search_question(
+            ExampleModel(),
+            embeddings,
+            chunks,
+            "pregunta",
+            top_k=2,
+            unique_records=False,
+        )
+        self.assertEqual(
+            [hit["chunk_id"] for hit in hits],
+            ["a-1", "a-2"],
+        )
 
 
 class MetricTests(unittest.TestCase):

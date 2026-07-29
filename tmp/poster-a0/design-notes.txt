@@ -1,0 +1,31 @@
+Communication job:
+By the end, attendees of the Second South American NLP School should understand
+that a small local RAG system can be reproducible and observable, and that its
+main weakness in this case study is retrieving distributed evidence for
+multi-section questions.
+
+Format:
+- A0 portrait, 841 x 1189 mm.
+- Editable PowerPoint plus print-ready PDF.
+- One intentionally two-line title.
+- Full-width architecture band.
+- Three-column evidence area.
+
+Visual system:
+- White canvas.
+- Dark navy ink.
+- Teal for architecture and successful behavior.
+- Blue for metrics.
+- Warm coral for failure modes.
+- Pale gray and pale blue structural fields.
+- Arial as a portable Helvetica-compatible sans-serif.
+
+Narrative:
+Problem -> objective -> architecture -> evaluation -> results -> diagnosis ->
+conclusion.
+
+Editorial guardrails:
+- Do not present automatic status accuracy as factual accuracy.
+- Keep human and automatic metrics visibly separated.
+- Do not imply TEC affiliation or institutional endorsement.
+- Emphasize the architecture and diagnostic findings over implementation detail.

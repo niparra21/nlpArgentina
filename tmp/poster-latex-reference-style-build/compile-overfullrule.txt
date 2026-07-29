@@ -1,0 +1,1288 @@
+note: "version 2" Tectonic command-line interface activated
+note: Running TeX ...
+Fontconfig error: Cannot load default config file: No such file: (null)
+warning: main.tex:116: 
+Requested font "[TeXGyreTermesX-Regular.otf]/OT" at 24.87997pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Regular.otf]/OT" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Slanted.otf]/OT:script=latn;language=dflt;" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-BoldItalic.otf]/OT:script=latn;language=dflt;" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-BoldSlanted.otf]/OT:script=latn;language=dflt;" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 24.88pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 12.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;+smcp;+pcap;mapping=tex-text;" at 24.88pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;+smcp;+pcap;mapping=tex-text;" at 20.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 74.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 29.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 24.88pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 23.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 21.0pt
+warning: main.tex:491: Overfull \hbox (28.61185pt too wide) in paragraph at lines 491--491
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 24.88pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 24.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 18.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 19.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 19.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 18.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 31.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 35.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;+smcp;+pcap;mapping=tex-text;" at 35.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 31.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-BoldItalic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 31.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 25.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 25.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-BoldItalic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 25.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 42.0pt
+warning: main.tex:491: Requested font "[lmmono12-regular]:" at 31.0pt
+warning: main.tex:491: Requested font "cmss17" at 24.88pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 18.2pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss12" at 13.7pt
+warning: main.tex:491:  -> cmss12
+warning: main.tex:491: Requested font "ntxmi" at 24.88pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 18.2pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 13.7pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxsy" at 24.88pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 18.2pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 13.7pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxexx" at 24.88pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 18.2pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 13.7pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "msam10" at 24.88pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: 
+Requested font "msam10" at 18.2pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 13.7pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msbm10" at 24.88pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: 
+Requested font "msbm10" at 18.2pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 13.7pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: 
+Requested font "ntxmia" at 24.88pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 18.2pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 13.7pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: 
+Requested font "ntxsym" at 24.88pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 18.2pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 13.7pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: 
+Requested font "ntxsyc" at 24.88pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 18.2pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 13.7pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxexa" at 24.88pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 18.2pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 13.7pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 24.88pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 18.2pt
+warning: main.tex:491: Requested font "[lmsans12-regular]:mapping=tex-text;" at 13.7pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 24.88pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 18.2pt
+warning: main.tex:491: Requested font "[lmsans12-oblique]:mapping=tex-text;" at 13.7pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 48.0pt
+warning: main.tex:491: Requested font "cmss17" at 48.0pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 35.0398pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 26.40015pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "ntxmi" at 48.0pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 35.0398pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 26.40015pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxsy" at 48.0pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 35.0398pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 26.40015pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxexx" at 48.0pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 35.0398pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 26.40015pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "msam10" at 48.0pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 35.0398pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 26.40015pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msbm10" at 48.0pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 35.0398pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 26.40015pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "ntxmia" at 48.0pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 35.0398pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 26.40015pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxsym" at 48.0pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 35.0398pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 26.40015pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsyc" at 48.0pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 35.0398pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 26.40015pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxexa" at 48.0pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 35.0398pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 26.40015pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 48.0pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 35.0398pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 26.40015pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 48.0pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 35.0398pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 26.40015pt
+warning: main.tex:491: Requested font "cmss17" at 25.0pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 18.2499pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss12" at 13.75008pt
+warning: main.tex:491:  -> cmss12
+warning: main.tex:491: Requested font "ntxmi" at 25.0pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 18.2499pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 13.75008pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxsy" at 25.0pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 18.2499pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 13.75008pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxexx" at 25.0pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 18.2499pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 13.75008pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "msam10" at 25.0pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 18.2499pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 13.75008pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msbm10" at 25.0pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 18.2499pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 13.75008pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "ntxmia" at 25.0pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 18.2499pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 13.75008pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxsym" at 25.0pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 18.2499pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 13.75008pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsyc" at 25.0pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 18.2499pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 13.75008pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxexa" at 25.0pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 18.2499pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 13.75008pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 25.0pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 18.2499pt
+warning: main.tex:491: Requested font "[lmsans12-regular]:mapping=tex-text;" at 13.75008pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 25.0pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 18.2499pt
+warning: main.tex:491: Requested font "[lmsans12-oblique]:mapping=tex-text;" at 13.75008pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 29.0pt
+warning: main.tex:491: Requested font "cmss17" at 29.0pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 21.16988pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss12" at 15.95009pt
+warning: main.tex:491:  -> cmss12
+warning: main.tex:491: Requested font "ntxmi" at 29.0pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 21.16988pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 15.95009pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxsy" at 29.0pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 21.16988pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 15.95009pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxexx" at 29.0pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 21.16988pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 15.95009pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "msam10" at 29.0pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 21.16988pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 15.95009pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msbm10" at 29.0pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 21.16988pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 15.95009pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "ntxmia" at 29.0pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 21.16988pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 15.95009pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxsym" at 29.0pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 21.16988pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 15.95009pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsyc" at 29.0pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 21.16988pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 15.95009pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxexa" at 29.0pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 21.16988pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 15.95009pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 29.0pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 21.16988pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 15.95009pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 29.0pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 21.16988pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 15.95009pt
+warning: main.tex:491: Requested font "cmss17" at 31.0pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 22.62987pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 17.0501pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "ntxmi" at 31.0pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 22.62987pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 17.0501pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxsy" at 31.0pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 22.62987pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 17.0501pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxexx" at 31.0pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 22.62987pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 17.0501pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "msam10" at 31.0pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 22.62987pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 17.0501pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msbm10" at 31.0pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 22.62987pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 17.0501pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "ntxmia" at 31.0pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 22.62987pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 17.0501pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxsym" at 31.0pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 22.62987pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 17.0501pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsyc" at 31.0pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 22.62987pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 17.0501pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxexa" at 31.0pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 22.62987pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 17.0501pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 31.0pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 22.62987pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 17.0501pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 31.0pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 22.62987pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 17.0501pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 27.0pt
+warning: main.tex:491: Requested font "[lmmono12-regular]:" at 27.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 26.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 16.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 15.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 18.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 4.0pt
+note: Running BibTeX on main.aux ...
+note: Rerunning TeX because bibtex was run ...
+warning: main.tex:116: 
+Requested font "[TeXGyreTermesX-Regular.otf]/OT" at 24.87997pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Regular.otf]/OT" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Slanted.otf]/OT:script=latn;language=dflt;" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-BoldItalic.otf]/OT:script=latn;language=dflt;" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-BoldSlanted.otf]/OT:script=latn;language=dflt;" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 24.88pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 12.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;+smcp;+pcap;mapping=tex-text;" at 24.88pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;+smcp;+pcap;mapping=tex-text;" at 20.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 74.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 29.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 24.88pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 23.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 21.0pt
+warning: main.tex:491: Overfull \hbox (28.61185pt too wide) in paragraph at lines 491--491
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 24.88pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 24.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 18.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 19.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 19.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 18.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 31.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 35.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;+smcp;+pcap;mapping=tex-text;" at 35.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 31.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-BoldItalic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 31.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 25.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 25.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-BoldItalic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 25.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 42.0pt
+warning: main.tex:491: Requested font "[lmmono12-regular]:" at 31.0pt
+warning: main.tex:491: Requested font "cmss17" at 24.88pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 18.2pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss12" at 13.7pt
+warning: main.tex:491:  -> cmss12
+warning: main.tex:491: Requested font "ntxmi" at 24.88pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 18.2pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 13.7pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxsy" at 24.88pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 18.2pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 13.7pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxexx" at 24.88pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 18.2pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 13.7pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "msam10" at 24.88pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: 
+Requested font "msam10" at 18.2pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 13.7pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msbm10" at 24.88pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: 
+Requested font "msbm10" at 18.2pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 13.7pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: 
+Requested font "ntxmia" at 24.88pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 18.2pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 13.7pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: 
+Requested font "ntxsym" at 24.88pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 18.2pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 13.7pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: 
+Requested font "ntxsyc" at 24.88pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 18.2pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 13.7pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxexa" at 24.88pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 18.2pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 13.7pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 24.88pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 18.2pt
+warning: main.tex:491: Requested font "[lmsans12-regular]:mapping=tex-text;" at 13.7pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 24.88pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 18.2pt
+warning: main.tex:491: Requested font "[lmsans12-oblique]:mapping=tex-text;" at 13.7pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 48.0pt
+warning: main.tex:491: Requested font "cmss17" at 48.0pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 35.0398pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 26.40015pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "ntxmi" at 48.0pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 35.0398pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 26.40015pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxsy" at 48.0pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 35.0398pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 26.40015pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxexx" at 48.0pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 35.0398pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 26.40015pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "msam10" at 48.0pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 35.0398pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 26.40015pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msbm10" at 48.0pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 35.0398pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 26.40015pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "ntxmia" at 48.0pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 35.0398pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 26.40015pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxsym" at 48.0pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 35.0398pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 26.40015pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsyc" at 48.0pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 35.0398pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 26.40015pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxexa" at 48.0pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 35.0398pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 26.40015pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 48.0pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 35.0398pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 26.40015pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 48.0pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 35.0398pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 26.40015pt
+warning: main.tex:491: Requested font "cmss17" at 25.0pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 18.2499pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss12" at 13.75008pt
+warning: main.tex:491:  -> cmss12
+warning: main.tex:491: Requested font "ntxmi" at 25.0pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 18.2499pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 13.75008pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxsy" at 25.0pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 18.2499pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 13.75008pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxexx" at 25.0pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 18.2499pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 13.75008pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "msam10" at 25.0pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 18.2499pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 13.75008pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msbm10" at 25.0pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 18.2499pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 13.75008pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "ntxmia" at 25.0pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 18.2499pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 13.75008pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxsym" at 25.0pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 18.2499pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 13.75008pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsyc" at 25.0pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 18.2499pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 13.75008pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxexa" at 25.0pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 18.2499pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 13.75008pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 25.0pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 18.2499pt
+warning: main.tex:491: Requested font "[lmsans12-regular]:mapping=tex-text;" at 13.75008pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 25.0pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 18.2499pt
+warning: main.tex:491: Requested font "[lmsans12-oblique]:mapping=tex-text;" at 13.75008pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 29.0pt
+warning: main.tex:491: Requested font "cmss17" at 29.0pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 21.16988pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss12" at 15.95009pt
+warning: main.tex:491:  -> cmss12
+warning: main.tex:491: Requested font "ntxmi" at 29.0pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 21.16988pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 15.95009pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxsy" at 29.0pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 21.16988pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 15.95009pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxexx" at 29.0pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 21.16988pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 15.95009pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "msam10" at 29.0pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 21.16988pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 15.95009pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msbm10" at 29.0pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 21.16988pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 15.95009pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "ntxmia" at 29.0pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 21.16988pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 15.95009pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxsym" at 29.0pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 21.16988pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 15.95009pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsyc" at 29.0pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 21.16988pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 15.95009pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxexa" at 29.0pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 21.16988pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 15.95009pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 29.0pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 21.16988pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 15.95009pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 29.0pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 21.16988pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 15.95009pt
+warning: main.tex:491: Requested font "cmss17" at 31.0pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 22.62987pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 17.0501pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "ntxmi" at 31.0pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 22.62987pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 17.0501pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxsy" at 31.0pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 22.62987pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 17.0501pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxexx" at 31.0pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 22.62987pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 17.0501pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "msam10" at 31.0pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 22.62987pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 17.0501pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msbm10" at 31.0pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 22.62987pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 17.0501pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "ntxmia" at 31.0pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 22.62987pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 17.0501pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxsym" at 31.0pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 22.62987pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 17.0501pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsyc" at 31.0pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 22.62987pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 17.0501pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxexa" at 31.0pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 22.62987pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 17.0501pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 31.0pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 22.62987pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 17.0501pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 31.0pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 22.62987pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 17.0501pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 27.0pt
+warning: main.tex:491: Requested font "[lmmono12-regular]:" at 27.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 26.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 16.0pt
+warning: main.bbl:28: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 16.0pt
+warning: main.bbl:36: Requested font "cmss12" at 16.0pt
+warning: main.bbl:36:  -> cmss12
+warning: main.bbl:36: Requested font "cmss10" at 11.67993pt
+warning: main.bbl:36:  -> cmss10
+warning: main.bbl:36: Requested font "cmss8" at 8.80005pt
+warning: main.bbl:36:  -> cmss8
+warning: main.bbl:36: Requested font "ntxmi" at 16.0pt
+warning: main.bbl:36:  -> ntxmi
+warning: main.bbl:36: Requested font "ntxmi" at 11.67993pt
+warning: main.bbl:36:  -> ntxmi
+warning: main.bbl:36: Requested font "ntxmi" at 8.80005pt
+warning: main.bbl:36:  -> ntxmi
+warning: main.bbl:36: Requested font "ntxsy" at 16.0pt
+warning: main.bbl:36:  -> ntxsy
+warning: main.bbl:36: Requested font "ntxsy" at 11.67993pt
+warning: main.bbl:36:  -> ntxsy
+warning: main.bbl:36: Requested font "ntxsy" at 8.80005pt
+warning: main.bbl:36:  -> ntxsy
+warning: main.bbl:36: Requested font "ntxexx" at 16.0pt
+warning: main.bbl:36:  -> ntxexx
+warning: main.bbl:36: Requested font "ntxexx" at 11.67993pt
+warning: main.bbl:36:  -> ntxexx
+warning: main.bbl:36: Requested font "ntxexx" at 8.80005pt
+warning: main.bbl:36:  -> ntxexx
+warning: main.bbl:36: Requested font "msam10" at 16.0pt
+warning: main.bbl:36:  -> msam10
+warning: main.bbl:36: Requested font "msam10" at 11.67993pt
+warning: main.bbl:36:  -> msam10
+warning: main.bbl:36: Requested font "msam7" at 8.80005pt
+warning: main.bbl:36:  -> msam7
+warning: main.bbl:36: Requested font "msbm10" at 16.0pt
+warning: main.bbl:36:  -> msbm10
+warning: main.bbl:36: Requested font "msbm10" at 11.67993pt
+warning: main.bbl:36:  -> msbm10
+warning: main.bbl:36: Requested font "msbm7" at 8.80005pt
+warning: main.bbl:36:  -> msbm7
+warning: main.bbl:36: Requested font "ntxmia" at 16.0pt
+warning: main.bbl:36:  -> ntxmia
+warning: main.bbl:36: Requested font "ntxmia" at 11.67993pt
+warning: main.bbl:36:  -> ntxmia
+warning: main.bbl:36: Requested font "ntxmia" at 8.80005pt
+warning: main.bbl:36:  -> ntxmia
+warning: main.bbl:36: Requested font "ntxsym" at 16.0pt
+warning: main.bbl:36:  -> ntxsym
+warning: main.bbl:36: Requested font "ntxsym" at 11.67993pt
+warning: main.bbl:36:  -> ntxsym
+warning: main.bbl:36: Requested font "ntxsym" at 8.80005pt
+warning: main.bbl:36:  -> ntxsym
+warning: main.bbl:36: Requested font "ntxsyc" at 16.0pt
+warning: main.bbl:36:  -> ntxsyc
+warning: main.bbl:36: Requested font "ntxsyc" at 11.67993pt
+warning: main.bbl:36:  -> ntxsyc
+warning: main.bbl:36: Requested font "ntxsyc" at 8.80005pt
+warning: main.bbl:36:  -> ntxsyc
+warning: main.bbl:36: Requested font "ntxexa" at 16.0pt
+warning: main.bbl:36:  -> ntxexa
+warning: main.bbl:36: Requested font "ntxexa" at 11.67993pt
+warning: main.bbl:36:  -> ntxexa
+warning: main.bbl:36: Requested font "ntxexa" at 8.80005pt
+warning: main.bbl:36:  -> ntxexa
+warning: main.bbl:36: Requested font "[lmsans17-regular]:mapping=tex-text;" at 16.0pt
+warning: main.bbl:36: Requested font "[lmsans12-regular]:mapping=tex-text;" at 11.67993pt
+warning: main.bbl:36: Requested font "[lmsans9-regular]:mapping=tex-text;" at 8.80005pt
+warning: main.bbl:36: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 16.0pt
+warning: main.bbl:36: Requested font "[lmsans12-oblique]:mapping=tex-text;" at 11.67993pt
+warning: main.bbl:36: Requested font "[lmsans9-oblique]:mapping=tex-text;" at 8.80005pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 15.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 18.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 4.0pt
+note: Rerunning TeX because "main.aux" changed ...
+warning: main.tex:116: 
+Requested font "[TeXGyreTermesX-Regular.otf]/OT" at 24.87997pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Regular.otf]/OT" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Slanted.otf]/OT:script=latn;language=dflt;" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-BoldItalic.otf]/OT:script=latn;language=dflt;" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-BoldSlanted.otf]/OT:script=latn;language=dflt;" at 24.88004pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 24.88pt
+warning: main.tex:116: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 12.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;+smcp;+pcap;mapping=tex-text;" at 24.88pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;+smcp;+pcap;mapping=tex-text;" at 20.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 74.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 29.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 24.88pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 23.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 21.0pt
+warning: main.tex:491: Overfull \hbox (28.61185pt too wide) in paragraph at lines 491--491
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 24.88pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 24.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 18.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 19.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 19.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 18.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 31.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 35.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;+smcp;+pcap;mapping=tex-text;" at 35.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 31.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-BoldItalic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 31.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 25.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 25.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-BoldItalic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 25.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 42.0pt
+warning: main.tex:491: Requested font "[lmmono12-regular]:" at 31.0pt
+warning: main.tex:491: Requested font "cmss17" at 24.88pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 18.2pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss12" at 13.7pt
+warning: main.tex:491:  -> cmss12
+warning: main.tex:491: Requested font "ntxmi" at 24.88pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 18.2pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 13.7pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxsy" at 24.88pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 18.2pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 13.7pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxexx" at 24.88pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 18.2pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 13.7pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "msam10" at 24.88pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: 
+Requested font "msam10" at 18.2pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 13.7pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msbm10" at 24.88pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: 
+Requested font "msbm10" at 18.2pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 13.7pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: 
+Requested font "ntxmia" at 24.88pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 18.2pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 13.7pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: 
+Requested font "ntxsym" at 24.88pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 18.2pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 13.7pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: 
+Requested font "ntxsyc" at 24.88pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 18.2pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 13.7pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxexa" at 24.88pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 18.2pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 13.7pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 24.88pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 18.2pt
+warning: main.tex:491: Requested font "[lmsans12-regular]:mapping=tex-text;" at 13.7pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 24.88pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 18.2pt
+warning: main.tex:491: Requested font "[lmsans12-oblique]:mapping=tex-text;" at 13.7pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 48.0pt
+warning: main.tex:491: Requested font "cmss17" at 48.0pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 35.0398pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 26.40015pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "ntxmi" at 48.0pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 35.0398pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 26.40015pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxsy" at 48.0pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 35.0398pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 26.40015pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxexx" at 48.0pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 35.0398pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 26.40015pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "msam10" at 48.0pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 35.0398pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 26.40015pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msbm10" at 48.0pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 35.0398pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 26.40015pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "ntxmia" at 48.0pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 35.0398pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 26.40015pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxsym" at 48.0pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 35.0398pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 26.40015pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsyc" at 48.0pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 35.0398pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 26.40015pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxexa" at 48.0pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 35.0398pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 26.40015pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 48.0pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 35.0398pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 26.40015pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 48.0pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 35.0398pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 26.40015pt
+warning: main.tex:491: Requested font "cmss17" at 25.0pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 18.2499pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss12" at 13.75008pt
+warning: main.tex:491:  -> cmss12
+warning: main.tex:491: Requested font "ntxmi" at 25.0pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 18.2499pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 13.75008pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxsy" at 25.0pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 18.2499pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 13.75008pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxexx" at 25.0pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 18.2499pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 13.75008pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "msam10" at 25.0pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 18.2499pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 13.75008pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msbm10" at 25.0pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 18.2499pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 13.75008pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "ntxmia" at 25.0pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 18.2499pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 13.75008pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxsym" at 25.0pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 18.2499pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 13.75008pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsyc" at 25.0pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 18.2499pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 13.75008pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxexa" at 25.0pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 18.2499pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 13.75008pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 25.0pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 18.2499pt
+warning: main.tex:491: Requested font "[lmsans12-regular]:mapping=tex-text;" at 13.75008pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 25.0pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 18.2499pt
+warning: main.tex:491: Requested font "[lmsans12-oblique]:mapping=tex-text;" at 13.75008pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 29.0pt
+warning: main.tex:491: Requested font "cmss17" at 29.0pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 21.16988pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss12" at 15.95009pt
+warning: main.tex:491:  -> cmss12
+warning: main.tex:491: Requested font "ntxmi" at 29.0pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 21.16988pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 15.95009pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxsy" at 29.0pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 21.16988pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 15.95009pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxexx" at 29.0pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 21.16988pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 15.95009pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "msam10" at 29.0pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 21.16988pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 15.95009pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msbm10" at 29.0pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 21.16988pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 15.95009pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "ntxmia" at 29.0pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 21.16988pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 15.95009pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxsym" at 29.0pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 21.16988pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 15.95009pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsyc" at 29.0pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 21.16988pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 15.95009pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxexa" at 29.0pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 21.16988pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 15.95009pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 29.0pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 21.16988pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 15.95009pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 29.0pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 21.16988pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 15.95009pt
+warning: main.tex:491: Requested font "cmss17" at 31.0pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 22.62987pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "cmss17" at 17.0501pt
+warning: main.tex:491:  -> cmss17
+warning: main.tex:491: Requested font "ntxmi" at 31.0pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 22.62987pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxmi" at 17.0501pt
+warning: main.tex:491:  -> ntxmi
+warning: main.tex:491: Requested font "ntxsy" at 31.0pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 22.62987pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxsy" at 17.0501pt
+warning: main.tex:491:  -> ntxsy
+warning: main.tex:491: Requested font "ntxexx" at 31.0pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 22.62987pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "ntxexx" at 17.0501pt
+warning: main.tex:491:  -> ntxexx
+warning: main.tex:491: Requested font "msam10" at 31.0pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 22.62987pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msam10" at 17.0501pt
+warning: main.tex:491:  -> msam10
+warning: main.tex:491: Requested font "msbm10" at 31.0pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 22.62987pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "msbm10" at 17.0501pt
+warning: main.tex:491:  -> msbm10
+warning: main.tex:491: Requested font "ntxmia" at 31.0pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 22.62987pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxmia" at 17.0501pt
+warning: main.tex:491:  -> ntxmia
+warning: main.tex:491: Requested font "ntxsym" at 31.0pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 22.62987pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsym" at 17.0501pt
+warning: main.tex:491:  -> ntxsym
+warning: main.tex:491: Requested font "ntxsyc" at 31.0pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 22.62987pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxsyc" at 17.0501pt
+warning: main.tex:491:  -> ntxsyc
+warning: main.tex:491: Requested font "ntxexa" at 31.0pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 22.62987pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "ntxexa" at 17.0501pt
+warning: main.tex:491:  -> ntxexa
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 31.0pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 22.62987pt
+warning: main.tex:491: Requested font "[lmsans17-regular]:mapping=tex-text;" at 17.0501pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 31.0pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 22.62987pt
+warning: main.tex:491: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 17.0501pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 27.0pt
+warning: main.tex:491: Requested font "[lmmono12-regular]:" at 27.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 26.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 16.0pt
+warning: main.bbl:28: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 16.0pt
+warning: main.bbl:36: Requested font "cmss12" at 16.0pt
+warning: main.bbl:36:  -> cmss12
+warning: main.bbl:36: Requested font "cmss10" at 11.67993pt
+warning: main.bbl:36:  -> cmss10
+warning: main.bbl:36: Requested font "cmss8" at 8.80005pt
+warning: main.bbl:36:  -> cmss8
+warning: main.bbl:36: Requested font "ntxmi" at 16.0pt
+warning: main.bbl:36:  -> ntxmi
+warning: main.bbl:36: Requested font "ntxmi" at 11.67993pt
+warning: main.bbl:36:  -> ntxmi
+warning: main.bbl:36: Requested font "ntxmi" at 8.80005pt
+warning: main.bbl:36:  -> ntxmi
+warning: main.bbl:36: Requested font "ntxsy" at 16.0pt
+warning: main.bbl:36:  -> ntxsy
+warning: main.bbl:36: Requested font "ntxsy" at 11.67993pt
+warning: main.bbl:36:  -> ntxsy
+warning: main.bbl:36: Requested font "ntxsy" at 8.80005pt
+warning: main.bbl:36:  -> ntxsy
+warning: main.bbl:36: Requested font "ntxexx" at 16.0pt
+warning: main.bbl:36:  -> ntxexx
+warning: main.bbl:36: Requested font "ntxexx" at 11.67993pt
+warning: main.bbl:36:  -> ntxexx
+warning: main.bbl:36: Requested font "ntxexx" at 8.80005pt
+warning: main.bbl:36:  -> ntxexx
+warning: main.bbl:36: Requested font "msam10" at 16.0pt
+warning: main.bbl:36:  -> msam10
+warning: main.bbl:36: Requested font "msam10" at 11.67993pt
+warning: main.bbl:36:  -> msam10
+warning: main.bbl:36: Requested font "msam7" at 8.80005pt
+warning: main.bbl:36:  -> msam7
+warning: main.bbl:36: Requested font "msbm10" at 16.0pt
+warning: main.bbl:36:  -> msbm10
+warning: main.bbl:36: Requested font "msbm10" at 11.67993pt
+warning: main.bbl:36:  -> msbm10
+warning: main.bbl:36: Requested font "msbm7" at 8.80005pt
+warning: main.bbl:36:  -> msbm7
+warning: main.bbl:36: Requested font "ntxmia" at 16.0pt
+warning: main.bbl:36:  -> ntxmia
+warning: main.bbl:36: Requested font "ntxmia" at 11.67993pt
+warning: main.bbl:36:  -> ntxmia
+warning: main.bbl:36: Requested font "ntxmia" at 8.80005pt
+warning: main.bbl:36:  -> ntxmia
+warning: main.bbl:36: Requested font "ntxsym" at 16.0pt
+warning: main.bbl:36:  -> ntxsym
+warning: main.bbl:36: Requested font "ntxsym" at 11.67993pt
+warning: main.bbl:36:  -> ntxsym
+warning: main.bbl:36: Requested font "ntxsym" at 8.80005pt
+warning: main.bbl:36:  -> ntxsym
+warning: main.bbl:36: Requested font "ntxsyc" at 16.0pt
+warning: main.bbl:36:  -> ntxsyc
+warning: main.bbl:36: Requested font "ntxsyc" at 11.67993pt
+warning: main.bbl:36:  -> ntxsyc
+warning: main.bbl:36: Requested font "ntxsyc" at 8.80005pt
+warning: main.bbl:36:  -> ntxsyc
+warning: main.bbl:36: Requested font "ntxexa" at 16.0pt
+warning: main.bbl:36:  -> ntxexa
+warning: main.bbl:36: Requested font "ntxexa" at 11.67993pt
+warning: main.bbl:36:  -> ntxexa
+warning: main.bbl:36: Requested font "ntxexa" at 8.80005pt
+warning: main.bbl:36:  -> ntxexa
+warning: main.bbl:36: Requested font "[lmsans17-regular]:mapping=tex-text;" at 16.0pt
+warning: main.bbl:36: Requested font "[lmsans12-regular]:mapping=tex-text;" at 11.67993pt
+warning: main.bbl:36: Requested font "[lmsans9-regular]:mapping=tex-text;" at 8.80005pt
+warning: main.bbl:36: Requested font "[lmsans17-oblique]:mapping=tex-text;" at 16.0pt
+warning: main.bbl:36: Requested font "[lmsans12-oblique]:mapping=tex-text;" at 11.67993pt
+warning: main.bbl:36: Requested font "[lmsans9-oblique]:mapping=tex-text;" at 8.80005pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 15.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 18.0pt
+warning: main.tex:491: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 4.0pt
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: Not writing `main.out`: it would be empty.
+note: Writing `C:\Users\nicop\Documents\GitHub\nlpArgentina\tmp\poster-latex-reference-style-build\main.pdf` (43.1865234375 KiB)
+note: Not writing `main.snm`: it would be empty.
+note: Writing `C:\Users\nicop\Documents\GitHub\nlpArgentina\tmp\poster-latex-reference-style-build\main.nav` (307 B)
+note: Writing `C:\Users\nicop\Documents\GitHub\nlpArgentina\tmp\poster-latex-reference-style-build\main.toc` (30 B)
+note: Writing `C:\Users\nicop\Documents\GitHub\nlpArgentina\tmp\poster-latex-reference-style-build\main.blg` (379 B)
+note: Writing `C:\Users\nicop\Documents\GitHub\nlpArgentina\tmp\poster-latex-reference-style-build\main.log` (73.720703125 KiB)
+note: Writing `C:\Users\nicop\Documents\GitHub\nlpArgentina\tmp\poster-latex-reference-style-build\main.bbl` (1.7451171875 KiB)
+note: Writing `C:\Users\nicop\Documents\GitHub\nlpArgentina\tmp\poster-latex-reference-style-build\main.aux` (1.5341796875 KiB)

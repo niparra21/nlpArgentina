@@ -1,0 +1,11 @@
+[Sources]
+- Local corpus metadata: data/processed/tec/2026-07-23/processing_manifest.json
+- Local index metadata: data/indexes/tec/2026-07-23/multilingual-e5-small/index_manifest.json
+- Retrieval evaluation: results/retrieval/2026-07-23/multilingual-e5-small/summary.json
+- Automatic RAG evaluation: results/rag-evaluation/2026-07-28/qwen3.5-9b-normalized-citations/summary.json
+- Human review workbook: outputs/rag-manual-review-20260728/revision_manual_rag_completada.xlsx
+- Human decision log: docs/05-bitacora-revision-manual.md
+- Repository: https://github.com/niparra21/nlpArgentina
+- RAG paper: https://arxiv.org/abs/2005.11401
+- Multilingual E5 report: https://arxiv.org/abs/2402.05672
+- TEC source portal: https://www.tec.ac.cr/

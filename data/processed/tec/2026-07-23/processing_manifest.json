@@ -1,0 +1,374 @@
+{
+  "generated_at": "2026-07-23T13:32:29-06:00",
+  "input_manifest": "data/raw/tec/2026-07-23/manifest.csv",
+  "output_file": "data/processed/tec/2026-07-23/sections.jsonl",
+  "output_sha256": "6ee3dc6ac0a6e9d34ad0a2dc31fff7f479b447f19d56ea726a189c406502b4ff",
+  "parser_version": "1.1.0",
+  "snapshot_date": "2026-07-23",
+  "snapshot_id": "2026-07-23",
+  "source_documents": [
+    {
+      "document_id": "tec-rrea-2025",
+      "raw_file": "data/raw/tec/2026-07-23/tec-rrea-2025.html",
+      "raw_sha256": "72bdbf0a062831478d015fdb5866c29cdd2ad2d42e43451eb6de83402b1af6d3",
+      "source_url": "https://www.tec.ac.cr/reglamento-regimen-ensenanza-aprendizaje-instituto-tecnologico-costa-rica"
+    },
+    {
+      "document_id": "tec-becas-prestamos",
+      "raw_file": "data/raw/tec/2026-07-23/tec-becas-prestamos.html",
+      "raw_sha256": "ed039f4843f5d034248a178cac25f11511a7f006872e223a38e260b2d5d1e7d7",
+      "source_url": "https://www.tec.ac.cr/reglamento-becas-prestamos-estudiantiles-instituto-tecnologico-costa-rica-sus-reformas"
+    },
+    {
+      "document_id": "tec-equiparacion-asignaturas",
+      "raw_file": "data/raw/tec/2026-07-23/tec-equiparacion-asignaturas.html",
+      "raw_sha256": "58515199b01319136fae6068469dc694c907deac66417df3c0aa6d65874d2c29",
+      "source_url": "https://www.tec.ac.cr/reglamento-equiparacion-asignaturas-instituto-tecnologico-costa-rica"
+    },
+    {
+      "document_id": "tec-residencias-estudiantiles",
+      "raw_file": "data/raw/tec/2026-07-23/tec-residencias-estudiantiles.html",
+      "raw_sha256": "ded0c932dd73a1fdae328640b16359d91c627204e4b5fab10159c25717e96fa7",
+      "source_url": "https://www.tec.ac.cr/reglamento-funcionamiento-programa-residencias-estudiantiles-instituto-tecnologico-costa-rica"
+    },
+    {
+      "document_id": "tec-defensoria-estudiantil",
+      "raw_file": "data/raw/tec/2026-07-23/tec-defensoria-estudiantil.html",
+      "raw_sha256": "fde4828367d4eb414c24f00da8a3cd12736d9827645db87c6c625fd64d319a9c",
+      "source_url": "https://www.tec.ac.cr/reglamento-funcionamiento-defensoria-estudiantil"
+    },
+    {
+      "document_id": "tec-becas-posgrado",
+      "raw_file": "data/raw/tec/2026-07-23/tec-becas-posgrado.html",
+      "raw_sha256": "e8a414e08604634c5d01e83a3bc4fce6d750ab5132e053628c2c3522e1ce3ace",
+      "source_url": "https://www.tec.ac.cr/reglamento-becas-posgrado-instituto-tecnologico-costa-rica"
+    },
+    {
+      "document_id": "tec-convivencia-disciplina",
+      "raw_file": "data/raw/tec/2026-07-23/tec-convivencia-disciplina.html",
+      "raw_sha256": "66536a1fb667f57d991b0b64b7a82ae81a5913d2272d47a48e7ca0b341138ff9",
+      "source_url": "https://www.tec.ac.cr/reglamento-convivencia-regimen-disciplinario-comunidad-estudiantil-instituto-tecnologico-costa-rica"
+    },
+    {
+      "document_id": "tec-admision-grado",
+      "raw_file": "data/raw/tec/2026-07-23/tec-admision-grado.html",
+      "raw_sha256": "78873ae62e44f0971f060cb9624a8ff52cc7b7d45cb05d5392996f3448c3d0cd",
+      "source_url": "https://www.tec.ac.cr/reglamento-admision-carreras-grado-instituto-tecnologico-costa-rica"
+    },
+    {
+      "document_id": "tec-prueba-aptitud",
+      "raw_file": "data/raw/tec/2026-07-23/tec-prueba-aptitud.html",
+      "raw_sha256": "269faa3d7a1901b80415bc1e0019a24e46fb13baede635f545a1945f46078e8a",
+      "source_url": "https://www.tec.ac.cr/reglamento-prueba-aptitud-academica-instituto-tecnologico-costa-rica-sus-reformas-asi-reformado"
+    },
+    {
+      "document_id": "tec-graduacion",
+      "raw_file": "data/raw/tec/2026-07-23/tec-graduacion.html",
+      "raw_sha256": "ad736a3335b86c07f7901132d17ddb89416aa96a029d3fdf153ffbec9355da4a",
+      "source_url": "https://www.tec.ac.cr/reglamento-normas-generales-graduacion-tecnologico-costa-rica"
+    },
+    {
+      "document_id": "tec-tfg-grado",
+      "raw_file": "data/raw/tec/2026-07-23/tec-tfg-grado.html",
+      "raw_sha256": "b61fbf823bb73e3ca43e625f975e88610ec832d1bfa4f2fac8615226f7314330",
+      "source_url": "https://www.tec.ac.cr/reforma-integral-reglamento-trabajos-finales-graduacion-programas-grado-itcr"
+    },
+    {
+      "document_id": "tec-reconocimiento-grados-titulos",
+      "raw_file": "data/raw/tec/2026-07-23/tec-reconocimiento-grados-titulos.html",
+      "raw_sha256": "4e5d055584d4776d94002e3553be5cf9ce3a821f4309c796848d780763858e55",
+      "source_url": "https://www.tec.ac.cr/reglamento-reconocimiento-equiparacion-grados-titulos-tecnologico-costa-rica"
+    },
+    {
+      "document_id": "tec-horas-estudiante-asistente",
+      "raw_file": "data/raw/tec/2026-07-23/tec-horas-estudiante-asistente.html",
+      "raw_sha256": "7e4ad0cc14852bc83a34103d5e1cb355700844e0a2cba31a45c41c3cca983dcc",
+      "source_url": "https://www.tec.ac.cr/reglamento-asignacion-horas-estudiante-horas-asistente-instituto-tecnologico-costa-rica"
+    },
+    {
+      "document_id": "tec-beca-asistente-especial",
+      "raw_file": "data/raw/tec/2026-07-23/tec-beca-asistente-especial.html",
+      "raw_sha256": "74d4f5d83ffd4179be0ee4c8f99080abfbd6e29d4e21668b1175ad3b51666fc5",
+      "source_url": "https://www.tec.ac.cr/reglamento-beca-estudiante-asistente-especial-instituto-tecnologico-costa-rica"
+    },
+    {
+      "document_id": "tec-beca-asistente-investigacion",
+      "raw_file": "data/raw/tec/2026-07-23/tec-beca-asistente-investigacion.html",
+      "raw_sha256": "e7c4b055e7f399217eaa88959146d6d36f8fd564ed0f0ce847ff7496b3af47ff",
+      "source_url": "https://www.tec.ac.cr/normativa-beca-estudiante-asistente-proyectos-investigacion-extension"
+    },
+    {
+      "document_id": "tec-fondo-solidario",
+      "raw_file": "data/raw/tec/2026-07-23/tec-fondo-solidario.html",
+      "raw_sha256": "b8d6302c2dabb83620cf760b5cef660c183710d4ba76e7fc5bc4a34325ce6efc",
+      "source_url": "https://www.tec.ac.cr/reglamento-fondo-solidario-desarrollo-estudiantil-instituto-tecnologico-costa-rica"
+    },
+    {
+      "document_id": "tec-financiamiento-exterior",
+      "raw_file": "data/raw/tec/2026-07-23/tec-financiamiento-exterior.html",
+      "raw_sha256": "bac20efa8719466e7eba9ee3af00fdd9bbedf4ff5665e947acc31e1a095b7529",
+      "source_url": "https://www.tec.ac.cr/reglamento-fondo-financiamiento-actividades-exterior-estudiantes-diplomado-bachillerato"
+    },
+    {
+      "document_id": "tec-beca-mauricio-campos",
+      "raw_file": "data/raw/tec/2026-07-23/tec-beca-mauricio-campos.html",
+      "raw_sha256": "c5b75d26e43356a83992802ddc26deae9d9c35938467279e66808ae627abd0d7",
+      "source_url": "https://www.tec.ac.cr/reglamento-fundamento-humanistico-beca-mauricio-campos-instituto-tecnologico-costa-rica"
+    },
+    {
+      "document_id": "tec-codigo-electoral-estudiantil",
+      "raw_file": "data/raw/tec/2026-07-23/tec-codigo-electoral-estudiantil.html",
+      "raw_sha256": "8a4c3767826806fca4fb4e0bdf23ce4ff827aba65ba8ba5d854674e3c10f0500",
+      "source_url": "https://www.tec.ac.cr/codigo-electoral-estudiantil-tecnologico-costa-rica"
+    },
+    {
+      "document_id": "tec-reglamento-superior-feitec",
+      "raw_file": "data/raw/tec/2026-07-23/tec-reglamento-superior-feitec.html",
+      "raw_sha256": "6db5049874f87d57ae8f731ddfc6f8de67092dbd055aca333b48655166bf271f",
+      "source_url": "https://www.tec.ac.cr/reglamento-superior-federacion-estudiantes-instituto-tecnologico-costa-rica"
+    },
+    {
+      "document_id": "tec-directorio-asambleas-estudiantiles",
+      "raw_file": "data/raw/tec/2026-07-23/tec-directorio-asambleas-estudiantiles.html",
+      "raw_sha256": "914f168e5b111b6a5b63dd413562bccc50196c9680f2c43df8339dad4169a66f",
+      "source_url": "https://www.tec.ac.cr/reglamento-directorio-asambleas-estudiantiles-plenario-asociaciones-asamblea-general-estudiantes"
+    },
+    {
+      "document_id": "tec-correo-electronico",
+      "raw_file": "data/raw/tec/2026-07-23/tec-correo-electronico.html",
+      "raw_sha256": "698c48385f3033bff1bbcad5f58a04cdbd188566180a362f658d4d0c9a4b0c14",
+      "source_url": "https://www.tec.ac.cr/reglamento-uso-correo-electronico-instituto-tecnologico-costa-rica"
+    },
+    {
+      "document_id": "tec-hostigamiento-sexual",
+      "raw_file": "data/raw/tec/2026-07-23/tec-hostigamiento-sexual.html",
+      "raw_sha256": "e29b12889c8c31d9b1977c4181c06447256ff8eb39ddf7d2dc406befc583874c",
+      "source_url": "https://www.tec.ac.cr/reglamento-hostigamiento-sexual-empleo-academia-instituto-tecnologico-costa-rica-0"
+    },
+    {
+      "document_id": "tec-no-discriminacion",
+      "raw_file": "data/raw/tec/2026-07-23/tec-no-discriminacion.html",
+      "raw_sha256": "0cce10154111e2a664fed2894447626449566d040dbeabbff1915f792d9b3dcd",
+      "source_url": "https://www.tec.ac.cr/reglamento-instituto-tecnologico-costa-rica-discriminacion-orientacion-sexual-identidad-expresion"
+    },
+    {
+      "document_id": "tec-tercer-representante-estudiantil",
+      "raw_file": "data/raw/tec/2026-07-23/tec-tercer-representante-estudiantil.html",
+      "raw_sha256": "a9dd82b93384829fde1e3049c55b284343e8ff705e0aba98357539651d45ff48",
+      "source_url": "https://www.tec.ac.cr/reglamento-eleccion-tercer-representante-tercer-suplente-estudiantil-consejo-institucional"
+    }
+  ],
+  "statistics": {
+    "articles": 1141,
+    "documents": [
+      {
+        "articles": 95,
+        "characters": 98811,
+        "document_id": "tec-rrea-2025",
+        "records": 97,
+        "transitories": 2,
+        "words": 14936
+      },
+      {
+        "articles": 56,
+        "characters": 52152,
+        "document_id": "tec-becas-prestamos",
+        "records": 59,
+        "transitories": 3,
+        "words": 8266
+      },
+      {
+        "articles": 34,
+        "characters": 19603,
+        "document_id": "tec-equiparacion-asignaturas",
+        "records": 34,
+        "transitories": 0,
+        "words": 2985
+      },
+      {
+        "articles": 29,
+        "characters": 41250,
+        "document_id": "tec-residencias-estudiantiles",
+        "records": 31,
+        "transitories": 2,
+        "words": 6477
+      },
+      {
+        "articles": 30,
+        "characters": 15407,
+        "document_id": "tec-defensoria-estudiantil",
+        "records": 30,
+        "transitories": 0,
+        "words": 2394
+      },
+      {
+        "articles": 24,
+        "characters": 17952,
+        "document_id": "tec-becas-posgrado",
+        "records": 27,
+        "transitories": 3,
+        "words": 2809
+      },
+      {
+        "articles": 42,
+        "characters": 46998,
+        "document_id": "tec-convivencia-disciplina",
+        "records": 46,
+        "transitories": 4,
+        "words": 7099
+      },
+      {
+        "articles": 43,
+        "characters": 28264,
+        "document_id": "tec-admision-grado",
+        "records": 44,
+        "transitories": 1,
+        "words": 4390
+      },
+      {
+        "articles": 31,
+        "characters": 14928,
+        "document_id": "tec-prueba-aptitud",
+        "records": 32,
+        "transitories": 1,
+        "words": 2450
+      },
+      {
+        "articles": 27,
+        "characters": 11490,
+        "document_id": "tec-graduacion",
+        "records": 27,
+        "transitories": 0,
+        "words": 1824
+      },
+      {
+        "articles": 26,
+        "characters": 26288,
+        "document_id": "tec-tfg-grado",
+        "records": 26,
+        "transitories": 0,
+        "words": 4067
+      },
+      {
+        "articles": 33,
+        "characters": 24540,
+        "document_id": "tec-reconocimiento-grados-titulos",
+        "records": 35,
+        "transitories": 2,
+        "words": 3885
+      },
+      {
+        "articles": 32,
+        "characters": 17425,
+        "document_id": "tec-horas-estudiante-asistente",
+        "records": 33,
+        "transitories": 1,
+        "words": 2735
+      },
+      {
+        "articles": 33,
+        "characters": 21115,
+        "document_id": "tec-beca-asistente-especial",
+        "records": 33,
+        "transitories": 0,
+        "words": 3384
+      },
+      {
+        "articles": 14,
+        "characters": 7334,
+        "document_id": "tec-beca-asistente-investigacion",
+        "records": 14,
+        "transitories": 0,
+        "words": 1121
+      },
+      {
+        "articles": 19,
+        "characters": 15112,
+        "document_id": "tec-fondo-solidario",
+        "records": 20,
+        "transitories": 1,
+        "words": 2315
+      },
+      {
+        "articles": 23,
+        "characters": 4464,
+        "document_id": "tec-financiamiento-exterior",
+        "records": 23,
+        "transitories": 0,
+        "words": 667
+      },
+      {
+        "articles": 22,
+        "characters": 7984,
+        "document_id": "tec-beca-mauricio-campos",
+        "records": 22,
+        "transitories": 0,
+        "words": 1281
+      },
+      {
+        "articles": 146,
+        "characters": 88217,
+        "document_id": "tec-codigo-electoral-estudiantil",
+        "records": 146,
+        "transitories": 0,
+        "words": 13954
+      },
+      {
+        "articles": 136,
+        "characters": 59182,
+        "document_id": "tec-reglamento-superior-feitec",
+        "records": 142,
+        "transitories": 6,
+        "words": 8905
+      },
+      {
+        "articles": 101,
+        "characters": 33266,
+        "document_id": "tec-directorio-asambleas-estudiantiles",
+        "records": 104,
+        "transitories": 3,
+        "words": 5395
+      },
+      {
+        "articles": 28,
+        "characters": 21787,
+        "document_id": "tec-correo-electronico",
+        "records": 32,
+        "transitories": 4,
+        "words": 3303
+      },
+      {
+        "articles": 40,
+        "characters": 31608,
+        "document_id": "tec-hostigamiento-sexual",
+        "records": 42,
+        "transitories": 2,
+        "words": 4845
+      },
+      {
+        "articles": 47,
+        "characters": 49629,
+        "document_id": "tec-no-discriminacion",
+        "records": 54,
+        "transitories": 7,
+        "words": 7527
+      },
+      {
+        "articles": 30,
+        "characters": 9754,
+        "document_id": "tec-tercer-representante-estudiantil",
+        "records": 31,
+        "transitories": 1,
+        "words": 1517
+      }
+    ],
+    "records": 1184,
+    "transitories": 43
+  },
+  "validation": {
+    "expected_counts_verified": true,
+    "input_sha256_verified": true,
+    "nonempty_sections": true,
+    "unique_record_ids": true
+  }
+}

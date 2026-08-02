@@ -1,0 +1,204 @@
+{
+  "answerable_questions": 33,
+  "artifacts": {
+    "evaluation_jsonl": "results/rag-evaluation/2026-07-28/qwen3.5-9b/evaluation.jsonl",
+    "summary_json": "results/rag-evaluation/2026-07-28/qwen3.5-9b/summary.json"
+  },
+  "batch_duration_ms": 244526.25729999976,
+  "by_category": {
+    "admisión_y_graduación": {
+      "citation_hit_rate": 0.75,
+      "complete_expected_evidence_citation_rate": 0.75,
+      "completed": 6,
+      "mean_citation_evidence_recall": 0.75,
+      "mean_citation_precision_against_gold": 0.625,
+      "mean_lexical_f1": 0.4966343106796489,
+      "questions": 8,
+      "retrieval_hit_rate": 1.0,
+      "status_accuracy": 0.75
+    },
+    "becas_y_apoyo": {
+      "citation_hit_rate": 0.4,
+      "complete_expected_evidence_citation_rate": 0.4,
+      "completed": 6,
+      "mean_citation_evidence_recall": 0.4,
+      "mean_citation_precision_against_gold": 0.3,
+      "mean_lexical_f1": 0.40501774352637687,
+      "questions": 10,
+      "retrieval_hit_rate": 0.8,
+      "status_accuracy": 0.5
+    },
+    "comunicación_institucional": {
+      "citation_hit_rate": 0.5,
+      "complete_expected_evidence_citation_rate": 0.5,
+      "completed": 2,
+      "mean_citation_evidence_recall": 0.5,
+      "mean_citation_precision_against_gold": 0.5,
+      "mean_lexical_f1": 0.6987951807228916,
+      "questions": 2,
+      "retrieval_hit_rate": 1.0,
+      "status_accuracy": 0.5
+    },
+    "derechos_y_convivencia": {
+      "citation_hit_rate": 0.8333333333333334,
+      "complete_expected_evidence_citation_rate": 0.6666666666666666,
+      "completed": 5,
+      "mean_citation_evidence_recall": 0.75,
+      "mean_citation_precision_against_gold": 0.6388888888888888,
+      "mean_lexical_f1": 0.49410013394081737,
+      "questions": 6,
+      "retrieval_hit_rate": 1.0,
+      "status_accuracy": 0.8333333333333334
+    },
+    "enseñanza_y_evaluación": {
+      "citation_hit_rate": 0.5,
+      "complete_expected_evidence_citation_rate": 0.5,
+      "completed": 1,
+      "mean_citation_evidence_recall": 0.5,
+      "mean_citation_precision_against_gold": 0.5,
+      "mean_lexical_f1": 0.5517241379310345,
+      "questions": 2,
+      "retrieval_hit_rate": 1.0,
+      "status_accuracy": 0.5
+    },
+    "fuera_del_corpus": {
+      "citation_hit_rate": null,
+      "complete_expected_evidence_citation_rate": null,
+      "completed": 7,
+      "mean_citation_evidence_recall": null,
+      "mean_citation_precision_against_gold": null,
+      "mean_lexical_f1": null,
+      "questions": 7,
+      "retrieval_hit_rate": null,
+      "status_accuracy": 1.0
+    },
+    "gobierno_estudiantil": {
+      "citation_hit_rate": 0.8,
+      "complete_expected_evidence_citation_rate": 0.6,
+      "completed": 4,
+      "mean_citation_evidence_recall": 0.7,
+      "mean_citation_precision_against_gold": 0.8,
+      "mean_lexical_f1": 0.6121644875444266,
+      "questions": 5,
+      "retrieval_hit_rate": 1.0,
+      "status_accuracy": 0.8
+    }
+  },
+  "by_question_type": {
+    "direct": {
+      "citation_hit_rate": 0.64,
+      "complete_expected_evidence_citation_rate": 0.64,
+      "completed": 18,
+      "mean_citation_evidence_recall": 0.64,
+      "mean_citation_precision_against_gold": 0.56,
+      "mean_lexical_f1": 0.5084356921239783,
+      "questions": 25,
+      "retrieval_hit_rate": 0.92,
+      "status_accuracy": 0.68
+    },
+    "multi_section": {
+      "citation_hit_rate": 0.625,
+      "complete_expected_evidence_citation_rate": 0.375,
+      "completed": 6,
+      "mean_citation_evidence_recall": 0.5,
+      "mean_citation_precision_against_gold": 0.4791666666666667,
+      "mean_lexical_f1": 0.506233150827573,
+      "questions": 8,
+      "retrieval_hit_rate": 1.0,
+      "status_accuracy": 0.625
+    },
+    "unanswerable": {
+      "citation_hit_rate": null,
+      "complete_expected_evidence_citation_rate": null,
+      "completed": 7,
+      "mean_citation_evidence_recall": null,
+      "mean_citation_precision_against_gold": null,
+      "mean_lexical_f1": null,
+      "questions": 7,
+      "retrieval_hit_rate": null,
+      "status_accuracy": 1.0
+    }
+  },
+  "completed_questions": 31,
+  "configuration": {
+    "generator_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+    "generator_model": "qwen3.5:9b",
+    "generator_parameter_size": "9.7B",
+    "generator_quantization": "Q4_K_M",
+    "index_directory": "data/indexes/tec/2026-07-23/multilingual-e5-small",
+    "index_manifest_sha256": "b832bba614cdc8cc352c768fef896848c70d8adc7391da9cdbba04dbf43b814c",
+    "keep_alive": "5m",
+    "limit": null,
+    "num_ctx": 8192,
+    "num_predict": 512,
+    "ollama_url": "http://localhost:11434",
+    "ollama_version": "0.32.5",
+    "questions_file": "data/evaluation/questions.jsonl",
+    "questions_sha256": "5fb065bc2d8cf175dbdbffb41e9e231e3a61393c3d50eb9043b7abb4e9f95f6a",
+    "retrieval_model": "intfloat/multilingual-e5-small",
+    "retrieval_model_load_ms": 4106.189699999959,
+    "retrieval_model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "seed": 42,
+    "snapshot_id": "2026-07-23",
+    "temperature": 0.1,
+    "thinking": false,
+    "top_k": 5,
+    "unique_records": false
+  },
+  "errors": 9,
+  "finished_at": "2026-07-28T13:48:13.616-06:00",
+  "generation_speed_tokens_per_second": {
+    "maximum": 51.128105119384124,
+    "mean": 49.14646892012106,
+    "median": 50.135244351932506,
+    "minimum": 42.0444094074366,
+    "p95_nearest_rank": 51.1210952646433
+  },
+  "latency_ms": {
+    "generation_request": {
+      "maximum": 20578.995099999927,
+      "mean": 5916.8445193548205,
+      "median": 5399.245200000223,
+      "minimum": 4125.423300000421,
+      "p95_nearest_rank": 7281.072299999778
+    },
+    "question_total": {
+      "maximum": 21133.146099999976,
+      "mean": 5900.623185000035,
+      "median": 5404.37269999984,
+      "minimum": 4150.226499999917,
+      "p95_nearest_rank": 7301.965999999993
+    },
+    "retrieval_search": {
+      "maximum": 550.711400000182,
+      "mean": 38.22557500001835,
+      "median": 23.674900000060006,
+      "minimum": 17.57339999994656,
+      "p95_nearest_rank": 38.27939999996488
+    }
+  },
+  "metric_notes": {
+    "citation_hit_rate": "Proporción de preguntas respondibles donde al menos una fuente citada coincide con un record_id gold.",
+    "complete_expected_evidence_citation_rate": "Proporción donde se citaron todos los record_id gold; es especialmente relevante para preguntas multi_section.",
+    "lexical_overlap": "Superposición bag-of-words descriptiva contra la respuesta de referencia. No demuestra por sí sola corrección semántica ni fidelidad.",
+    "status_accuracy": "answered para preguntas respondibles y not_found para las preguntas marcadas como no respondibles."
+  },
+  "metrics": {
+    "answerable_answer_rate": 0.6666666666666666,
+    "citation_hit_rate": 0.6363636363636364,
+    "complete_expected_evidence_citation_rate": 0.5757575757575758,
+    "mean_citation_evidence_recall": 0.6060606060606061,
+    "mean_citation_precision_against_gold": 0.5404040404040404,
+    "mean_lexical_f1": 0.5079351145566136,
+    "mean_retrieval_evidence_recall": 0.8939393939393939,
+    "retrieval_complete_evidence_rate": 0.8484848484848485,
+    "retrieval_hit_rate": 0.9393939393939394,
+    "status_accuracy": 0.725,
+    "unanswerable_abstention_rate": 1.0
+  },
+  "questions": 40,
+  "run_id": "rag-eval-20260728T134409-095761",
+  "schema_version": "1.0.0",
+  "started_at": "2026-07-28T13:44:09.095-06:00",
+  "unanswerable_questions": 7
+}

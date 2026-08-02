@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1000" viewBox="0 0 1800 1000">
+  <defs>
+    <style>
+      .ink { fill: none; stroke: #111; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #111; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
+      .soft { fill: none; stroke: #777; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 24px; fill: #111; text-anchor: middle; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 19px; fill: #333; text-anchor: middle; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 16px; fill: #333; text-anchor: middle; }
+      .band { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #111; }
+      .step { fill: #fff; stroke: #111; stroke-width: 3; }
+      .steptext { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 700; fill: #111; text-anchor: middle; dominant-baseline: middle; }
+      .arrowlabel { font-family: Arial, Helvetica, sans-serif; font-size: 16px; fill: #333; text-anchor: middle; }
+    </style>
+    <marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L11,5.5 L0,11 Z" fill="#111"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L11,5.5 L0,11 Z" fill="#777"/>
+    </marker>
+  </defs>
+
+  <rect width="1800" height="1000" fill="#fff"/>
+
+  <!-- A. Indexacion del corpus -->
+  <text x="55" y="48" class="band">A. Indexación del corpus</text>
+  <line x1="55" y1="62" x2="1745" y2="62" class="thin"/>
+
+  <!-- Documentos -->
+  <g transform="translate(115 103)">
+    <rect x="18" y="14" width="82" height="105" rx="4" class="thin"/>
+    <rect x="8" y="5" width="82" height="105" rx="4" fill="#fff" stroke="#111" stroke-width="3.5"/>
+    <rect x="0" y="0" width="82" height="105" rx="4" fill="#fff" stroke="#111" stroke-width="3.5"/>
+    <line x1="15" y1="28" x2="66" y2="28" class="thin"/>
+    <line x1="15" y1="47" x2="66" y2="47" class="thin"/>
+    <line x1="15" y1="66" x2="57" y2="66" class="thin"/>
+    <path d="M53 86 l10 10 l18 -22" class="thin"/>
+  </g>
+  <text x="165" y="243" class="label">25 documentos oficiales</text>
+  <text x="165" y="269" class="small">captura, URL y hash</text>
+
+  <!-- Secciones -->
+  <g transform="translate(420 101)">
+    <path d="M12 0 H82 L110 28 V122 H12 Z" class="thin"/>
+    <path d="M82 0 V28 H110" class="thin"/>
+    <line x1="29" y1="48" x2="91" y2="48" class="thin"/>
+    <line x1="29" y1="68" x2="91" y2="68" class="thin"/>
+    <line x1="29" y1="88" x2="78" y2="88" class="thin"/>
+    <circle cx="23" cy="48" r="3.5" fill="#111"/>
+    <circle cx="23" cy="68" r="3.5" fill="#111"/>
+    <circle cx="23" cy="88" r="3.5" fill="#111"/>
+  </g>
+  <text x="475" y="243" class="label">1 184 secciones</text>
+  <text x="475" y="269" class="small">artículos y transitorios</text>
+
+  <!-- Fragmentacion -->
+  <g transform="translate(735 113)">
+    <rect x="0" y="0" width="62" height="48" rx="3" class="thin"/>
+    <rect x="72" y="0" width="62" height="48" rx="3" class="thin"/>
+    <rect x="0" y="61" width="62" height="48" rx="3" class="thin"/>
+    <rect x="72" y="61" width="62" height="48" rx="3" class="thin"/>
+    <path d="M58 46 L78 66 M78 46 L58 66" class="thin"/>
+    <circle cx="55" cy="43" r="7" class="thin"/>
+    <circle cx="81" cy="43" r="7" class="thin"/>
+  </g>
+  <text x="802" y="243" class="label">Fragmentación</text>
+  <text x="802" y="269" class="small">máx. 480 tokens · solapamiento 50</text>
+
+  <!-- Embeddings -->
+  <g transform="translate(1070 102)">
+    <path d="M60 7 C30 7 12 28 14 52 C-1 66 6 91 26 95 C29 118 57 128 73 111 C91 125 120 114 122 91 C142 80 139 53 122 45 C122 20 91 5 73 21 C69 12 65 7 60 7 Z" class="soft"/>
+    <circle cx="37" cy="48" r="5" fill="#777"/>
+    <circle cx="66" cy="35" r="5" fill="#777"/>
+    <circle cx="91" cy="54" r="5" fill="#777"/>
+    <circle cx="52" cy="79" r="5" fill="#777"/>
+    <circle cx="91" cy="89" r="5" fill="#777"/>
+    <line x1="37" y1="48" x2="66" y2="35" class="soft"/>
+    <line x1="66" y1="35" x2="91" y2="54" class="soft"/>
+    <line x1="37" y1="48" x2="52" y2="79" class="soft"/>
+    <line x1="52" y1="79" x2="91" y2="89" class="soft"/>
+    <line x1="91" y1="54" x2="91" y2="89" class="soft"/>
+  </g>
+  <text x="1142" y="243" class="label">multilingual-e5-small</text>
+  <text x="1142" y="269" class="small">embeddings de 384 dimensiones</text>
+
+  <!-- Indice vectorial -->
+  <g transform="translate(1515 111)">
+    <ellipse cx="62" cy="12" rx="60" ry="12" class="thin"/>
+    <path d="M2 12 V91 C2 101 29 111 62 111 C95 111 122 101 122 91 V12" class="thin"/>
+    <path d="M2 38 C2 48 29 58 62 58 C95 58 122 48 122 38" class="thin"/>
+    <path d="M2 64 C2 74 29 84 62 84 C95 84 122 74 122 64" class="thin"/>
+  </g>
+  <text x="1577" y="243" class="label">Índice vectorial</text>
+  <text x="1577" y="269" class="small">1 259 fragmentos normalizados</text>
+
+  <!-- Flechas de indexacion -->
+  <line x1="280" y1="164" x2="402" y2="164" class="thin" marker-end="url(#arrow)"/>
+  <line x1="595" y1="164" x2="716" y2="164" class="thin" marker-end="url(#arrow)"/>
+  <line x1="885" y1="164" x2="1047" y2="164" class="thin" marker-end="url(#arrow)"/>
+  <line x1="1240" y1="164" x2="1490" y2="164" class="thin" marker-end="url(#arrow)"/>
+
+  <!-- B. Consulta observable -->
+  <text x="55" y="345" class="band">B. Consulta y generación observables</text>
+  <line x1="55" y1="359" x2="1745" y2="359" class="thin"/>
+
+  <!-- Usuario -->
+  <g transform="translate(74 456)">
+    <circle cx="54" cy="34" r="25" class="ink"/>
+    <path d="M12 126 V103 C12 76 31 64 54 64 C77 64 96 76 96 103 V126" class="ink"/>
+    <line x1="12" y1="105" x2="12" y2="126" class="ink"/>
+    <line x1="96" y1="105" x2="96" y2="126" class="ink"/>
+    <rect x="112" y="22" width="58" height="43" rx="4" class="thin"/>
+    <path d="M123 65 L119 81 L139 65" class="thin"/>
+    <circle cx="128" cy="43" r="3" fill="#111"/>
+    <circle cx="141" cy="43" r="3" fill="#111"/>
+    <circle cx="154" cy="43" r="3" fill="#111"/>
+  </g>
+  <text x="128" y="610" class="label">Usuario</text>
+  <text x="128" y="637" class="small">pregunta en español</text>
+
+  <!-- Orquestador -->
+  <g transform="translate(545 432)">
+    <rect x="0" y="0" width="135" height="42" rx="18" class="ink"/>
+    <rect x="0" y="55" width="135" height="42" rx="18" class="ink"/>
+    <rect x="0" y="110" width="135" height="42" rx="18" class="ink"/>
+    <circle cx="24" cy="21" r="5" fill="#111"/>
+    <circle cx="24" cy="76" r="5" fill="#111"/>
+    <circle cx="24" cy="131" r="5" fill="#111"/>
+    <line x1="43" y1="21" x2="107" y2="21" class="thin"/>
+    <line x1="43" y1="76" x2="107" y2="76" class="thin"/>
+    <line x1="43" y1="131" x2="107" y2="131" class="thin"/>
+  </g>
+  <text x="612" y="390" class="label">Orquestador RAG</text>
+  <text x="612" y="414" class="small">contrato de entrada y salida</text>
+
+  <!-- Modelo de embeddings online -->
+  <g transform="translate(1035 390)">
+    <path d="M60 7 C30 7 12 28 14 52 C-1 66 6 91 26 95 C29 118 57 128 73 111 C91 125 120 114 122 91 C142 80 139 53 122 45 C122 20 91 5 73 21 C69 12 65 7 60 7 Z" class="soft"/>
+    <circle cx="37" cy="48" r="5" fill="#777"/>
+    <circle cx="66" cy="35" r="5" fill="#777"/>
+    <circle cx="91" cy="54" r="5" fill="#777"/>
+    <circle cx="52" cy="79" r="5" fill="#777"/>
+    <circle cx="91" cy="89" r="5" fill="#777"/>
+    <line x1="37" y1="48" x2="66" y2="35" class="soft"/>
+    <line x1="66" y1="35" x2="91" y2="54" class="soft"/>
+    <line x1="37" y1="48" x2="52" y2="79" class="soft"/>
+    <line x1="52" y1="79" x2="91" y2="89" class="soft"/>
+    <line x1="91" y1="54" x2="91" y2="89" class="soft"/>
+  </g>
+  <text x="1085" y="568" class="label">Modelo de embeddings</text>
+  <text x="1085" y="594" class="small">consulta → vector de 384 d</text>
+
+  <!-- Base vectorial online -->
+  <g transform="translate(338 678)">
+    <ellipse cx="62" cy="12" rx="60" ry="12" class="thin"/>
+    <path d="M2 12 V91 C2 101 29 111 62 111 C95 111 122 101 122 91 V12" class="thin"/>
+    <path d="M2 38 C2 48 29 58 62 58 C95 58 122 48 122 38" class="thin"/>
+    <path d="M2 64 C2 74 29 84 62 84 C95 84 122 74 122 64" class="thin"/>
+    <circle cx="112" cy="92" r="25" fill="#fff" stroke="#111" stroke-width="3.5"/>
+    <line x1="130" y1="110" x2="149" y2="129" class="thin"/>
+    <line x1="102" y1="85" x2="121" y2="85" class="thin"/>
+    <line x1="102" y1="94" x2="117" y2="94" class="thin"/>
+  </g>
+  <text x="408" y="837" class="label">Base vectorial</text>
+  <text x="408" y="864" class="small">similitud coseno · top-5</text>
+
+  <!-- LLM -->
+  <g transform="translate(1028 674)">
+    <path d="M30 35 Q72 7 114 35 V100 H30 Z" class="ink"/>
+    <line x1="42" y1="35" x2="27" y2="16" class="ink"/>
+    <line x1="102" y1="35" x2="117" y2="16" class="ink"/>
+    <circle cx="58" cy="66" r="7" fill="#777"/>
+    <circle cx="86" cy="66" r="7" fill="#777"/>
+    <line x1="58" y1="88" x2="86" y2="88" class="soft"/>
+  </g>
+  <text x="1100" y="838" class="label">LLM local</text>
+  <text x="1100" y="866" class="small">Qwen3.5:9B · Ollama · temp. 0,1</text>
+
+  <!-- Validador -->
+  <g transform="translate(1370 470)">
+    <rect x="15" y="8" width="96" height="120" rx="6" class="thin"/>
+    <rect x="41" y="0" width="44" height="18" rx="5" fill="#fff" stroke="#111" stroke-width="3.5"/>
+    <path d="M36 48 l12 12 l22 -28" class="ink"/>
+    <line x1="76" y1="43" x2="99" y2="43" class="thin"/>
+    <path d="M36 88 l12 12 l22 -28" class="ink"/>
+    <line x1="76" y1="83" x2="99" y2="83" class="thin"/>
+  </g>
+  <text x="1433" y="625" class="label">Validador</text>
+  <text x="1433" y="652" class="small">citas visibles + JSON</text>
+
+  <!-- Respuesta -->
+  <g transform="translate(1620 479)">
+    <rect x="0" y="0" width="126" height="84" rx="10" class="ink"/>
+    <path d="M87 84 L105 111 L63 84" class="ink"/>
+    <line x1="22" y1="27" x2="102" y2="27" class="thin"/>
+    <line x1="22" y1="47" x2="91" y2="47" class="thin"/>
+    <line x1="22" y1="67" x2="72" y2="67" class="thin"/>
+  </g>
+  <text x="1683" y="625" class="label">Respuesta</text>
+  <text x="1683" y="652" class="small">answered / not_found</text>
+
+  <!-- Interacciones numeradas -->
+  <line x1="255" y1="520" x2="520" y2="520" class="ink" marker-end="url(#arrow)"/>
+  <circle cx="386" cy="495" r="18" class="step"/><text x="386" y="495" class="steptext">1</text>
+  <text x="386" y="552" class="arrowlabel">pregunta</text>
+
+  <path d="M690 467 C805 405 910 405 1017 447" class="ink" marker-end="url(#arrow)"/>
+  <path d="M1017 474 C910 503 805 510 691 493" class="ink" marker-end="url(#arrow)"/>
+  <circle cx="855" cy="420" r="18" class="step"/><text x="855" y="420" class="steptext">2</text>
+  <text x="855" y="455" class="arrowlabel">embedding de consulta</text>
+
+  <path d="M570 588 C520 636 487 676 455 714" class="ink" marker-end="url(#arrow)"/>
+  <path d="M442 689 C481 633 523 585 568 557" class="ink" marker-end="url(#arrow)"/>
+  <circle cx="492" cy="637" r="18" class="step"/><text x="492" y="637" class="steptext">3</text>
+  <text x="440" y="661" class="arrowlabel">top-5 + puntuaciones</text>
+
+  <path d="M684 557 C796 610 900 670 1016 718" class="ink" marker-end="url(#arrow)"/>
+  <path d="M1017 746 C900 710 790 646 679 589" class="ink" marker-end="url(#arrow)"/>
+  <circle cx="855" cy="653" r="18" class="step"/><text x="855" y="653" class="steptext">4</text>
+  <text x="855" y="685" class="arrowlabel">contexto + respuesta</text>
+
+  <path d="M689 521 C930 535 1150 535 1350 535" class="ink" marker-end="url(#arrow)"/>
+  <circle cx="1256" cy="508" r="18" class="step"/><text x="1256" y="508" class="steptext">5</text>
+  <text x="1275" y="558" class="arrowlabel">validación</text>
+
+  <line x1="1497" y1="535" x2="1600" y2="535" class="ink" marker-end="url(#arrow)"/>
+  <circle cx="1548" cy="510" r="18" class="step"/><text x="1548" y="510" class="steptext">6</text>
+
+  <!-- Observabilidad -->
+  <g transform="translate(690 895)">
+    <path d="M0 42 Q55 -5 110 42 Q55 89 0 42 Z" class="thin"/>
+    <circle cx="55" cy="42" r="17" class="thin"/>
+    <circle cx="55" cy="42" r="6" fill="#111"/>
+  </g>
+  <path d="M612 594 C625 720 661 841 700 928" class="soft" marker-end="url(#arrowGray)"/>
+  <circle cx="654" cy="794" r="18" class="step"/><text x="654" y="794" class="steptext">7</text>
+  <text x="1175" y="921" class="label">Traza observable por consulta</text>
+  <text x="1175" y="951" class="small">pregunta · IDs y puntuaciones · contexto · respuesta y estado · citas · tiempos</text>
+  <text x="1175" y="980" class="tiny">Registro JSON reproducible para atribuir fallos de recuperación, generación o validación</text>
+</svg>

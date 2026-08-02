@@ -55,6 +55,9 @@ Esto evita confundir **formato de página** con **estilo académico**.
 ```text
 poster/
 └── overleaf-ieee/
+    ├── figures/
+    │   ├── figura-a-indexacion-corpus.png
+    │   └── figura-b-consulta-observable.png
     ├── main.tex
     ├── references.bib
     ├── README.md
@@ -70,8 +73,7 @@ Es el documento principal. Está dividido mediante comentarios numerados:
 3. comandos reutilizables;
 4. datos del póster;
 5. encabezado;
-6. arquitectura central;
-7. cuerpo en dos columnas;
+6. cuerpo en dos columnas y figuras;
 8. referencias IEEE y pie.
 
 Los comentarios que comienzan con `%` explican el código, pero no aparecen en
@@ -103,6 +105,19 @@ La guía oficial de referencias de IEEE explica el uso de números consecutivos:
 
 <https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE_Reference_Guide.pdf>
 
+### `figures/`
+
+Contiene las dos ilustraciones exportadas desde Canva:
+
+- `figura-a-indexacion-corpus.png`: procesamiento e indexación del corpus;
+- `figura-b-consulta-observable.png`: consulta, generación, validación y
+  registro de la traza.
+
+La separación entre LaTeX e ilustraciones permite volver a editar el contenido
+visual en Canva y sustituir únicamente la exportación. `main.tex` utiliza
+rutas relativas, por lo que Overleaf encuentra las imágenes siempre que la
+carpeta `figures` esté dentro del proyecto.
+
 ### `README.md`
 
 Explica cómo cargar el proyecto en Overleaf, seleccionar el compilador y
@@ -129,8 +144,9 @@ Define el tamaño A0 y la orientación vertical.
 
 ### `tikz`
 
-Dibuja el pipeline RAG y el gráfico de aprobación como vectores. Un vector no
-depende de una resolución fija, por lo que mantiene bordes nítidos al imprimir.
+Dibuja el gráfico de aprobación como vector. Un vector no depende de una
+resolución fija, por lo que mantiene bordes nítidos al imprimir. Los diagramas
+arquitectónicos se incorporan con `graphicx` porque proceden de Canva.
 
 ### `newtxtext` y `newtxmath`
 
@@ -183,7 +199,7 @@ distancia. Se trasladaron proporcionalmente a A0:
 - dos columnas equilibradas de 48,5 % del ancho;
 - secciones centradas y numeradas;
 - resumen, objetivo y palabras clave con etiquetas en negrita cursiva;
-- diagrama central en blanco y negro con el rótulo `Fig. 1`;
+- dos diagramas en blanco y negro con los rótulos `Fig. 1` y `Fig. 2`;
 - referencias y vínculos en negro;
 - eliminación de las franjas, tarjetas y fondos de color.
 
@@ -213,16 +229,24 @@ El encabezado contiene:
 
 ### Arquitectura
 
-El pipeline se dibuja con siete nodos TikZ:
+La arquitectura se separa en dos figuras para distinguir dos momentos que no
+ocurren al mismo tiempo.
+
+La figura A representa el procesamiento fuera de línea:
 
 ```text
-Fuentes -> Secciones -> Índice -> Recuperación
-        -> Generación -> Validación -> Salida
+25 documentos -> 1 184 secciones -> fragmentación
+              -> embeddings normalizados -> 1 259 fragmentos indexados
 ```
 
-Cada nodo muestra el artefacto o decisión más importante de esa etapa.
+La figura B representa la ejecución de una consulta:
 
-Debajo aparece la traza observable:
+```text
+pregunta -> embedding -> búsqueda top-5 -> contexto
+         -> generación local -> validación -> respuesta
+```
+
+En paralelo, el orquestador registra:
 
 ```text
 pregunta -> fragmentos -> contexto -> respuesta
@@ -231,11 +255,62 @@ pregunta -> fragmentos -> contexto -> respuesta
 
 ### Dos columnas
 
-La primera columna explica el problema, corpus, método, evaluación humana y
-resultados principales.
+Cada columna comienza con una figura y su pie. Esta ubicación reproduce la
+práctica del artículo de referencia: la imagen aparece antes del texto que la
+explica y puede citarse como `Fig. 1` o `Fig. 2`.
 
-La segunda presenta rendimiento, interpretación de métricas, hallazgos,
-conclusión, limitaciones y repositorio.
+La primera columna presenta introducción, corpus, diseño, protocolo de
+evaluación y definición de la traza observable.
+
+La segunda presenta resultados, interpretación de métricas, discusión,
+limitaciones, conclusión y repositorio.
+
+### Tabla de resultados
+
+La `Tabla I` reúne las mediciones que antes aparecían repartidas entre cifras
+grandes y párrafos. Utiliza tres columnas:
+
+```text
+Indicador | Casos | Resultado
+```
+
+La columna `Casos` conserva el numerador y el denominador. Esto permite
+distinguir, por ejemplo:
+
+```text
+31/33 = 93,9 % de preguntas respondibles con evidencia en top-5
+35/40 = 87,5 % de decisiones de estado correctas
+7/7   = 100 % de abstenciones correctas
+```
+
+La tabla se divide en tres grupos:
+
+1. evaluación automática: validez estructural, estado, recuperación y citas;
+2. revisión humana: corrección, puntaje ponderado, fidelidad, cobertura y
+   aprobación;
+3. latencia: búsqueda, generación y tiempo total.
+
+Los denominadores no se mezclan. Recuperación y citas utilizan las 33 preguntas
+respondibles; la revisión factual y de cobertura también excluye las siete
+preguntas donde la corrección factual no aplica. La fidelidad utiliza 31
+respuestas con afirmaciones evaluables. La latencia de generación se calcula
+sobre las 37 salidas generadas; la recuperación y el tiempo total consideran
+las 40 consultas.
+
+La tabla sigue la composición de IEEE: título superior, ausencia de líneas
+verticales y reglas horizontales de `booktabs`.
+
+Las cifras se verificaron contra:
+
+```text
+results/rag-evaluation/2026-07-28/
+qwen3.5-9b-normalized-citations/summary.json
+
+outputs/rag-manual-review-20260728/
+revision_manual_rag_completada.xlsx
+
+docs/05-bitacora-revision-manual.md
+```
 
 ### Gráfico
 
@@ -310,7 +385,7 @@ La versión estable:
 - mantiene la arquitectura completa;
 - no invade columnas vecinas;
 - muestra las tres referencias;
-- no contiene cajas `Overfull` ni `Underfull`;
+- no contiene cajas `Overfull`;
 - no tiene citas indefinidas.
 
 ### Revisión estética basada en el artículo
@@ -323,13 +398,122 @@ por una composición editorial:
 3. se cambió de tres a dos columnas;
 4. se ajustó el cuerpo a 31/35 puntos;
 5. se centraron los títulos con numeración romana;
-6. se añadió un pie de figura al pipeline;
+6. se añadieron pies descriptivos a las dos figuras;
 7. se eliminaron los colores de citas, enlaces y listas;
 8. se aumentó el título a 74/80 puntos;
 9. se corrigió la sangría accidental de la regla del encabezado.
 
-Después de estos cambios, la compilación no reportó cajas `Overfull`,
-`Underfull` ni citas indefinidas.
+Después de estos cambios, la compilación no reportó cajas `Overfull` ni citas
+indefinidas. Los dos avisos `Underfull` aparecen al cerrar el marco de Beamer y
+no corresponden a texto visible mal compuesto.
+
+### Reorganización para incorporar las dos figuras
+
+La arquitectura inicial ocupaba una sola franja construida directamente en
+LaTeX. Después de completar los diagramas editables en Canva se reorganizó la
+página:
+
+1. la figura de indexación se colocó al inicio de la columna izquierda;
+2. la figura de consulta observable se colocó al inicio de la columna derecha;
+3. cada figura recibió un pie descriptivo breve;
+4. el resumen y la contribución se integraron en la introducción;
+5. el método se redactó como prosa técnica, no como una lista de componentes;
+6. la observabilidad recibió una sección propia;
+7. resultados, discusión, limitaciones y conclusión se mantuvieron separados.
+
+La redacción se revisó siguiendo el estilo del artículo de referencia:
+
+- afirmaciones directas y verificables;
+- párrafos justificados y compactos;
+- términos técnicos definidos cuando aparecen por primera vez;
+- separación entre lo implementado, lo medido y lo interpretado;
+- cifras acompañadas de su significado;
+- limitaciones expresadas de forma explícita;
+- pies de figura que explican el flujo sin repetir todos los rótulos internos.
+
+La reorganización no cambia las cifras del experimento. Su propósito es
+presentar con mayor claridad la relación entre la arquitectura implementada,
+la traza observable y los resultados de evaluación.
+
+## Ajuste de legibilidad para impresión A0
+
+Se revisaron los tamaños tipográficos utilizando como referencia indicaciones
+oficiales de congresos IEEE para pósteres. Estas guías coinciden en que el
+texto de lectura no debe bajar de 18 puntos y recomiendan títulos y encabezados
+considerablemente mayores:
+
+- IEEE-CYBER recomienda al menos 70 puntos para el título y 18 puntos para el
+  texto:
+  <https://ewh.ieee.org/soc/ras/conf/financiallycosponsored/cyber/2017/ieee-cyber.org/2017/indexd74f.html?page_id=196>
+- IEEE IVEC indica al menos 30 puntos para encabezados y 18 puntos para texto:
+  <https://www.ewh.ieee.org/conf/ivec/2020/assets/2020-Poster-Presentation-Instructions.pdf>
+- IEEE NSS/MIC advierte que el texto menor de 18 puntos es difícil de leer y
+  propone entre 24 y 40 puntos para elementos destacados:
+  <https://ewh.ieee.org/soc/nps/nss-mic/2016/presentationguidelines.php.html>
+
+La jerarquía final controlada desde `main.tex` es:
+
+| Elemento | Tamaño final |
+|---|---:|
+| Título principal | 74 pt |
+| Nombre de la autora | 29 pt |
+| Encabezados de sección | 35 pt |
+| Texto principal | 31 pt |
+| Contenido de la tabla | 21 pt |
+| Pies de figura | 20 pt |
+| Nota de la tabla | 20 pt |
+| Bibliografía | 18 pt |
+| Aviso inferior | 18 pt |
+
+Los pies de figura aumentaron de 18 a 20 puntos, la nota de la tabla de 18 a
+20 puntos, la bibliografía de 16 a 18 puntos y el aviso inferior de 15 a 18
+puntos. El texto principal y los encabezados se conservaron porque ya cumplían
+holgadamente las recomendaciones. Para compensar el aumento sin reducir
+tipografías se retiraron 0,15 cm de espacio vacío antes del pie inferior.
+
+Los rótulos incluidos dentro de los dos PNG no se modifican desde LaTeX. Se
+corrigen en Canva y luego se reemplazan las imágenes dentro de `figures`,
+conservando sus nombres.
+
+## Márgenes y equilibrio de columnas
+
+La primera versión utilizaba los márgenes predeterminados de Beamer. La
+medición del PDF mostraba aproximadamente 9,7 mm a la izquierda, 8,2 mm a la
+derecha, 1 mm arriba y 1,6 mm abajo. Aunque el contenido no estaba cortado,
+quedaba demasiado cerca de los límites físicos del papel.
+
+La versión ajustada define explícitamente los márgenes laterales:
+
+```tex
+\setbeamersize{text margin left=2cm,text margin right=2cm}
+```
+
+También reserva 1,9 cm al inicio del `frame`. Ese espacio, sumado a la altura
+real de las letras, deja cerca de 20 mm de margen superior. Los primeros 1,4 cm
+se compensaron redistribuyendo los espacios internos del encabezado, sin
+reducir el título ni las demás tipografías. Los 5 mm finales desplazan el
+contenido completo hacia abajo y equilibran los márgenes superior e inferior.
+
+El menor ancho disponible produjo nuevos saltos de línea y aumentó la altura de
+la columna derecha. La primera compilación con márgenes generó un
+desbordamiento vertical de 46,4 puntos. No se solucionó reduciendo la letra:
+el bloque `Código, datos y documentación` se trasladó desde la columna derecha
+al espacio libre de la columna izquierda. Así se equilibraron las columnas y
+se conservó todo el contenido.
+
+La medición final del área ocupada por texto es:
+
+| Margen | Medición final aproximada |
+|---|---:|
+| Izquierdo | 19,7 mm |
+| Derecho | 18,1 mm |
+| Superior | 20,0 mm |
+| Inferior | 26,4 mm |
+
+La pequeña diferencia lateral se debe a la forma de algunos caracteres y a la
+expansión tipográfica, no a que las cajas principales atraviesen el margen de
+2 cm. El margen inferior conserva unos milímetros adicionales para mantener
+las referencias, el aviso y el número de sesión lejos del borde de impresión.
 
 ## Validaciones del PDF
 
@@ -345,10 +529,11 @@ También se comprobó:
 
 - todas las tipografías están incrustadas;
 - el ZIP coloca `main.tex` en la raíz del proyecto;
+- el ZIP contiene las dos figuras dentro de `figures`;
 - las flechas avanzan de izquierda a derecha;
 - no hay texto cortado ni superposiciones;
 - las referencias `[1]`, `[2]` y `[3]` son visibles;
-- el PDF final y el PDF compilado tienen el mismo SHA-256.
+- el PDF final y el PDF compilado tienen el mismo contenido.
 
 ## Cómo abrirlo en Overleaf
 
@@ -358,8 +543,8 @@ También se comprobó:
 4. Cargar:
 
    ```text
-   outputs/poster-overleaf-20260729/
-   poster-rag-observable-overleaf-source.zip
+   outputs/poster-overleaf-20260730-margenes-ieee-final/
+   poster-rag-observable-overleaf-margenes-ieee-final.zip
    ```
 
 5. Abrir **Menu**.
@@ -373,8 +558,8 @@ También se comprobó:
 El archivo para imprenta y para el formulario es:
 
 ```text
-outputs/poster-overleaf-20260729/
-poster-rag-observable-ieee-a0.pdf
+outputs/poster-overleaf-20260730-margenes-ieee-final/
+poster-rag-observable-ieee-a0-margenes-ieee-final.pdf
 ```
 
 El ZIP es para editar en Overleaf, no para la imprenta.
@@ -383,9 +568,11 @@ El ZIP es para editar en Overleaf, no para la imprenta.
 
 Todavía se debe:
 
-1. revisar el contenido visual con Nicole;
-2. comprobar el límite y tipo de archivo permitido por el formulario;
-3. subir el PDF antes del 30 de julio;
-4. confirmar que la carga terminó correctamente.
+1. revisar el PDF completo con Nicole;
+2. si es posible, reemplazar los PNG de Canva por exportaciones PDF o PNG de
+   mayor resolución para la impresión A0;
+3. comprobar el límite y tipo de archivo permitido por el formulario;
+4. subir el PDF antes del 30 de julio;
+5. confirmar que la carga terminó correctamente.
 
 No se ha enviado automáticamente ningún archivo.

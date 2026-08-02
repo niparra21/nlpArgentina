@@ -7,6 +7,7 @@
 % IEEEtran no se usa como clase porque esta diseñada para articulos, no para
 % posters. Las convenciones IEEE se aplican a la estructura y las referencias.
 \usepackage[orientation=portrait,size=a0,scale=1.0]{beamerposter}
+\setbeamersize{text margin left=2cm,text margin right=2cm}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish,es-tabla]{babel}
@@ -29,41 +30,45 @@
 % ============================================================================
 % 2. PALETA Y TIPOGRAFIA
 % ============================================================================
-\definecolor{Navy}{HTML}{000000}
-\definecolor{IEEEBlue}{HTML}{000000}
-\definecolor{BrightBlue}{HTML}{000000}
-\definecolor{Teal}{HTML}{000000}
-\definecolor{PaleBlue}{HTML}{FFFFFF}
-\definecolor{PaleTeal}{HTML}{FFFFFF}
-\definecolor{PaleGray}{HTML}{F2F2F2}
-\definecolor{Coral}{HTML}{000000}
-\definecolor{BodyText}{HTML}{000000}
-\definecolor{RuleGray}{HTML}{777777}
+\definecolor{Navy}{HTML}{123B45}
+\definecolor{IEEEBlue}{HTML}{0B6670}
+\definecolor{BrightBlue}{HTML}{0B6670}
+\definecolor{Teal}{HTML}{0B6670}
+\definecolor{PaleBlue}{HTML}{EAF3F4}
+\definecolor{PaleTeal}{HTML}{E4F0F1}
+\definecolor{PaleGray}{HTML}{F2F4F4}
+\definecolor{Coral}{HTML}{0B6670}
+\definecolor{BodyText}{HTML}{111111}
+\definecolor{RuleGray}{HTML}{6D7779}
 \definecolor{White}{HTML}{FFFFFF}
 
 \setbeamercolor{normal text}{fg=BodyText,bg=White}
 \setbeamercolor{headline}{fg=Navy,bg=White}
-\setbeamercolor{block title}{fg=BodyText,bg=White}
+\setbeamercolor{block title}{fg=Navy,bg=White}
 \setbeamercolor{block body}{fg=BodyText,bg=White}
 \setbeamercolor{alerted text}{fg=Coral}
-\setbeamercolor{trace}{fg=Navy,bg=White}
+\setbeamercolor{takeaway}{fg=Navy,bg=PaleTeal}
+\setbeamercolor{trace}{fg=Navy,bg=PaleBlue}
+\setbeamercolor{trace card}{fg=BodyText,bg=PaleGray}
+\setbeamercolor{metric card}{fg=BodyText,bg=PaleBlue}
+\setbeamercolor{lesson card}{fg=BodyText,bg=PaleGray}
 \setbeamercolor{finding number}{fg=White,bg=Coral}
-\setbeamercolor{conclusion}{fg=BodyText,bg=White}
-\setbeamercolor{repository}{fg=BodyText,bg=White}
+\setbeamercolor{conclusion}{fg=Navy,bg=PaleTeal}
+\setbeamercolor{repository}{fg=BodyText,bg=PaleGray}
 \setbeamercolor{note}{fg=BodyText,bg=White}
-\setbeamercolor{structure}{fg=BodyText}
+\setbeamercolor{structure}{fg=Teal}
 \AtBeginDocument{\hypersetup{allcolors=black}}
 
-\setbeamerfont{normal text}{size=\fontsize{31}{35}\selectfont}
-\setbeamerfont{block title}{series=\mdseries,shape=\scshape,size=\fontsize{35}{39}\selectfont}
-\setbeamerfont{block body}{size=\fontsize{31}{35}\selectfont}
+\setbeamerfont{normal text}{size=\fontsize{33}{38}\selectfont}
+\setbeamerfont{block title}{series=\mdseries,shape=\scshape,size=\fontsize{36}{41}\selectfont}
+\setbeamerfont{block body}{size=\fontsize{33}{38}\selectfont}
 \setlength{\parindent}{1.15em}
 \setlength{\parskip}{0.08em}
 
 % Encabezados de seccion centrados y sin relleno, como en el articulo IEEE
 % usado como referencia visual.
 \setbeamertemplate{block begin}{
-  \vskip0.55cm
+  \vskip0.85cm
   \begin{beamercolorbox}[
     wd=\linewidth,
     sep=0.08cm,
@@ -80,29 +85,47 @@
 }
 \setbeamertemplate{block end}{
   \end{beamercolorbox}
-  \vskip0.25cm
+  \vskip0.40cm
 }
 
 % ============================================================================
 % 3. COMANDOS REUTILIZABLES
 % ============================================================================
-\newcommand{\metric}[3][BrightBlue]{%
-  \begin{minipage}[t]{0.47\linewidth}
-    {\color{#1}\bfseries\fontsize{48}{51}\selectfont #2\par}
-    \vspace{0.15cm}
-    {\bfseries\fontsize{24}{28}\selectfont #3\par}
-  \end{minipage}%
+\newcommand{\smalltext}{\fontsize{27}{31}\selectfont}
+\newcommand{\bodytext}{\fontsize{33}{38}\selectfont}
+\newcommand{\posterfigcaption}[1]{%
+  \vspace{0.28cm}
+  {\fontsize{22}{27}\selectfont\justifying #1\par}
+  \vspace{0.36cm}
 }
 
-\newcommand{\finding}[3]{%
-  \noindent
-  {\bfseries\itshape #1) #2.}\enspace
-  {\fontsize{27}{31}\selectfont #3\par}
-  \vspace{0.40cm}
+\newcommand{\resultcard}[3]{%
+  \begin{beamercolorbox}[wd=\linewidth,sep=0.50cm]{metric card}
+    {\color{Teal}\bfseries\fontsize{46}{50}\selectfont #1\par}
+    \vspace{0.12cm}
+    {\bfseries\fontsize{25}{29}\selectfont #2\par}
+    \vspace{0.12cm}
+    {\fontsize{20}{24}\selectfont #3\par}
+  \end{beamercolorbox}
 }
 
-\newcommand{\smalltext}{\fontsize{25}{29}\selectfont}
-\newcommand{\bodytext}{\fontsize{31}{35}\selectfont}
+\newcommand{\tracecard}[2]{%
+  \begin{beamercolorbox}[wd=\linewidth,sep=0.42cm]{trace card}
+    {\color{Navy}\bfseries\fontsize{25}{29}\selectfont #1\par}
+    \vspace{0.12cm}
+    {\fontsize{21}{25}\selectfont #2\par}
+  \end{beamercolorbox}
+}
+
+\newcommand{\lessoncard}[3]{%
+  \begin{beamercolorbox}[wd=\linewidth,sep=0.58cm]{lesson card}
+    {\color{Navy}\bfseries\fontsize{25}{29}\selectfont #1\par}
+    \vspace{0.16cm}
+    {\fontsize{22}{27}\selectfont #2\par}
+    \vspace{0.16cm}
+    {\fontsize{21}{25}\selectfont\textit{Implicación:} #3\par}
+  \end{beamercolorbox}
+}
 
 % ============================================================================
 % 4. DATOS DEL POSTER
@@ -114,6 +137,7 @@
 
 \begin{document}
 \begin{frame}[t]
+\vspace*{1.90cm}
 
 % ============================================================================
 % 5. ENCABEZADO
@@ -122,141 +146,66 @@
   \centering
   {\color{BodyText}\scshape\fontsize{20}{24}\selectfont
     Segunda Escuela Sudamericana de NLP -- Buenos Aires -- 2026\par}
-  \vspace{0.8cm}
+  \vspace{0.30cm}
   {\color{BodyText}\mdseries\fontsize{74}{80}\selectfont
     Diseño arquitectónico mínimo para sistemas RAG observables en español latinoamericano\par}
-  \vspace{0.9cm}
+  \vspace{0.35cm}
   {\color{BodyText}\fontsize{29}{34}\selectfont
     Nicole Tatiana Parra Valverde\par}
-  \vspace{0.18cm}
+  \vspace{0.10cm}
   {\color{BodyText}\itshape\fontsize{23}{28}\selectfont
     Trabajo independiente\par}
-  \vspace{0.18cm}
+  \vspace{0.10cm}
   {\color{BodyText}\fontsize{21}{25}\selectfont
     Caso de estudio: normativa estudiantil del Tecnológico de Costa Rica\par}
 \end{beamercolorbox}
 
-\vspace{0.55cm}
-\noindent{\color{BodyText}\rule{\textwidth}{0.045cm}}
-\vspace{0.35cm}
-
-% ============================================================================
-% 6. ARQUITECTURA CENTRAL
-% ============================================================================
-\begin{beamercolorbox}[wd=\textwidth,sep=0cm]{block body}
-  \centering
-  \resizebox{0.985\linewidth}{!}{%
-  \begin{tikzpicture}[
-    stage/.style={
-      draw=BodyText,
-      line width=1.1pt,
-      fill=White,
-      minimum width=9.0cm,
-      minimum height=5.3cm,
-      text width=7.9cm,
-      align=left,
-      inner sep=0.55cm
-    },
-    stagegreen/.style={
-      stage
-    },
-    stagealert/.style={
-      stage
-    },
-    flow/.style={
-      -{Stealth[length=0.55cm,width=0.42cm]},
-      draw=BodyText,
-      line width=1.5pt
-    }
-  ]
-    \node[stage] (source) {
-      {\bfseries 01}\\[0.25cm]
-      {\bfseries\fontsize{24}{27}\selectfont Fuentes}\\[0.20cm]
-      {\fontsize{18}{22}\selectfont 25 documentos\\captura + hash}
-    };
-    \node[stage,right=1.0cm of source] (sections) {
-      {\bfseries 02}\\[0.25cm]
-      {\bfseries\fontsize{24}{27}\selectfont Secciones}\\[0.20cm]
-      {\fontsize{18}{22}\selectfont 1\,184 registros\\artículos + transitorios}
-    };
-    \node[stagegreen,right=1.0cm of sections] (index) {
-      {\bfseries 03}\\[0.25cm]
-      {\bfseries\fontsize{24}{27}\selectfont Índice}\\[0.20cm]
-      {\fontsize{18}{22}\selectfont 1\,259 fragmentos\\E5 · 384 dimensiones}
-    };
-    \node[stagegreen,right=1.0cm of index] (retrieval) {
-      {\bfseries 04}\\[0.25cm]
-      {\bfseries\fontsize{24}{27}\selectfont Recuperación}\\[0.20cm]
-      {\fontsize{18}{22}\selectfont top-5\\similitud coseno}
-    };
-    \node[stage,right=1.0cm of retrieval] (generation) {
-      {\bfseries 05}\\[0.25cm]
-      {\bfseries\fontsize{24}{27}\selectfont Generación}\\[0.20cm]
-      {\fontsize{18}{22}\selectfont Qwen3.5:9B\\Ollama local}
-    };
-    \node[stagealert,right=1.0cm of generation] (validation) {
-      {\bfseries 06}\\[0.25cm]
-      {\bfseries\fontsize{24}{27}\selectfont Validación}\\[0.20cm]
-      {\fontsize{18}{22}\selectfont citas visibles\\+ estructuradas}
-    };
-    \node[stagegreen,right=1.0cm of validation] (output) {
-      {\bfseries 07}\\[0.25cm]
-      {\bfseries\fontsize{24}{27}\selectfont Salida}\\[0.20cm]
-      {\fontsize{18}{22}\selectfont respuesta\\+ traza JSON}
-    };
-
-    \draw[flow] (source.east) -- (sections.west);
-    \draw[flow] (sections.east) -- (index.west);
-    \draw[flow] (index.east) -- (retrieval.west);
-    \draw[flow] (retrieval.east) -- (generation.west);
-    \draw[flow] (generation.east) -- (validation.west);
-    \draw[flow] (validation.east) -- (output.west);
-  \end{tikzpicture}%
-  }
-
-  \vspace{0.35cm}
-  {\fontsize{19}{23}\selectfont
-    \textbf{Fig. 1.} Arquitectura RAG mínima y observable. Cada componente
-    produce un artefacto verificable; la traza conserva pregunta, fragmentos,
-    contexto, respuesta, estado, citas y tiempos.\par}
-
-  \vspace{0.2cm}
-  {\fontsize{18}{22}\selectfont
-    \textit{Configuración:} multilingual-e5-small; top-5; Qwen3.5:9B
-    Q4\_K\_M; temperatura 0,1; ejecución local.\par}
+\vspace{0.45cm}
+\begin{beamercolorbox}[wd=\textwidth,sep=0.42cm,center]{takeaway}
+  {\bfseries\fontsize{30}{35}\selectfont
+  Una arquitectura RAG mínima puede hacerse observable al conservar los
+  artefactos necesarios para reconstruir y diagnosticar cada consulta.\par}
 \end{beamercolorbox}
-
-\vspace{0.35cm}
+\vspace{0.55cm}
 
 % ============================================================================
-% 7. CUERPO EN DOS COLUMNAS
+% 6. CUERPO EN DOS COLUMNAS
 % ============================================================================
 \begin{columns}[T,totalwidth=\textwidth]
 
 % --------------------------------------------------------------------------
-% COLUMNA 1: RESUMEN, METODO Y RESULTADOS PRINCIPALES
+% COLUMNA 1: PROBLEMA, INDEXACION, EVALUACION Y LIMITACIONES
 % --------------------------------------------------------------------------
-\begin{column}{0.485\textwidth}
+\begin{column}{0.44\textwidth}
 
-\begin{block}{I. Resumen y objetivo}
-\noindent\textbf{\textit{Resumen—}}Los prototipos RAG suelen mostrar una
-respuesta final, pero no siempre
-conservan la cadena de evidencia necesaria para explicar por qué fue generada.
-Sin una traza es difícil distinguir fallos de recuperación, generación o
-validación. El diseño parte del paradigma RAG descrito por Lewis et al.
-\cite{lewis2020rag}.
+\begin{block}{I. Problema y objetivo}
+\noindent\textbf{\textit{Problema---}}Los sistemas RAG incorporan evidencia
+recuperada al contexto de un modelo generativo \cite{lewis2020rag}. Sin
+embargo, observar únicamente la respuesta final no permite determinar si un
+fallo se originó en la recuperación del contexto, la generación o la
+validación de la salida.
 
-\vspace{0.3cm}
-\noindent\textbf{\textit{Objetivo—}}Diseñar e implementar una arquitectura
-RAG mínima, local y reproducible para documentos en español latinoamericano,
-con señales básicas de observabilidad por consulta.
+\vspace{0.30cm}
+\noindent\textbf{\textit{Propuesta---}}Se diseñó e implementó una arquitectura
+RAG mínima y reproducible que registra, para cada consulta, la configuración,
+los fragmentos recuperados y sus puntuaciones, el contexto, la respuesta, el
+estado, las citas y los tiempos.
 
-\vspace{0.3cm}
-{\smalltext\noindent\textbf{\textit{Palabras clave—}}RAG, PLN en español, recuperación de
-información, observabilidad, modelos de lenguaje.}
+\vspace{0.30cm}
+\noindent\textbf{\textit{Objetivo---}}Evaluar si estos artefactos permiten
+reconstruir cada ejecución y distinguir fallos de recuperación, cobertura,
+generación y validación.
 \end{block}
 
-\begin{block}{II. Caso de estudio}
+\centering
+\includegraphics[
+  width=0.99\linewidth
+]{incisoA}
+\posterfigcaption{\textbf{Fig. 1.} Indexación reproducible del corpus. Los
+documentos oficiales se transforman en secciones, fragmentos y
+representaciones vectoriales normalizadas antes de construir el índice local.}
+
+\begin{block}{II. Corpus e indexación}
 \begin{columns}[T,totalwidth=\linewidth]
   \begin{column}{0.30\linewidth}
     {\color{Teal}\bfseries\fontsize{42}{45}\selectfont 25\par}
@@ -272,218 +221,295 @@ información, observabilidad, modelos de lenguaje.}
   \end{column}
 \end{columns}
 
-\vspace{0.55cm}
-Normativa estudiantil del TEC, Costa Rica. Cada captura conserva URL, fecha y
-suma de verificación. El corpus, sus metadatos y el procesamiento están
-versionados en el repositorio \cite{tec2026reglamentos}.
+\vspace{0.50cm}
+El corpus reúne normativa estudiantil publicada por el Tecnológico de Costa
+Rica \cite{tec2026reglamentos}. Cada captura conserva la URL oficial, la fecha
+de recolección y una suma SHA-256. Las secciones extensas se dividieron en
+fragmentos de hasta 480 tokens, con un solapamiento de 50.
 \end{block}
 
-\begin{block}{III. Metodología}
-\begin{enumerate}
-  \item Recolección de 25 documentos oficiales.
-  \item Extracción de artículos y disposiciones transitorias.
-  \item Fragmentación con máximo de 480 tokens y solapamiento de 50.
-  \item Embeddings con \texttt{multilingual-e5-small}
-    \cite{wang2024e5}, normalizados a 384 dimensiones.
-  \item Recuperación top-5 por similitud coseno.
-  \item Generación local con Qwen3.5:9B y temperatura 0,1.
-  \item Validación de estado, citas y contrato JSON.
-\end{enumerate}
+\begin{block}{III. Protocolo de evaluación}
+\begin{columns}[T,totalwidth=\linewidth]
+  \begin{column}{0.31\linewidth}
+    \centering
+    {\color{Teal}\bfseries\fontsize{46}{49}\selectfont 25\par}
+    {\bfseries\fontsize{23}{27}\selectfont directas}
+  \end{column}
+  \begin{column}{0.31\linewidth}
+    \centering
+    {\color{Teal}\bfseries\fontsize{46}{49}\selectfont 8\par}
+    {\bfseries\fontsize{23}{27}\selectfont multisección}
+  \end{column}
+  \begin{column}{0.34\linewidth}
+    \centering
+    {\color{Teal}\bfseries\fontsize{46}{49}\selectfont 7\par}
+    {\bfseries\fontsize{23}{27}\selectfont no respondibles}
+  \end{column}
+\end{columns}
+
+\vspace{0.50cm}
+Se definieron 40 preguntas de referencia: 25 directas, 8 que requieren
+evidencia de varias secciones y 7 no respondibles con el corpus.
+
+\vspace{0.30cm}
+La evaluación combinó métricas automáticas de recuperación, citas, estructura
+y latencia con revisión humana de corrección factual, cobertura, fidelidad a
+las fuentes y conclusión global.
 
 \vspace{0.25cm}
-\textbf{Evaluación:} 40 preguntas de referencia: 25 directas, 8 de varias
-secciones y 7 no respondibles. Cada ejecución guardó fragmentos, respuesta,
-citas y tiempos.
+{\fontsize{22}{27}\selectfont\textit{Nota:} las métricas de recuperación y
+citas se calculan sobre las 33 preguntas respondibles.\par}
 \end{block}
 
-\begin{block}{IV. Revisión humana}
-Las 40 respuestas se revisaron manualmente con seis criterios:
-\begin{itemize}
-  \item corrección factual;
-  \item cobertura;
-  \item fidelidad a fuentes;
-  \item claridad;
-  \item presencia de evidencia gold;
-  \item conclusión manual.
-\end{itemize}
+\begin{block}{Artefactos conservados por consulta}
+\begin{columns}[T,totalwidth=\linewidth]
+  \begin{column}{0.49\linewidth}
+    \tracecard{Configuración}{Corpus, índice, modelos y parámetros utilizados.}
+    \vspace{0.24cm}
+    \tracecard{Generación}{Contexto proporcionado, respuesta, tokens y
+    latencia.}
+  \end{column}
+  \begin{column}{0.49\linewidth}
+    \tracecard{Recuperación}{Fragmentos, identificadores, orden, puntuaciones y
+    fuentes oficiales.}
+    \vspace{0.24cm}
+    \tracecard{Resultado}{Estado, validez estructural, citas verificadas y
+    fuentes citadas.}
+  \end{column}
+\end{columns}
 
-\vspace{0.35cm}
-\noindent{\bfseries\smalltext
-Las métricas automáticas describen recuperación, citas y latencia; no se
-presentan como exactitud factual.}
+\vspace{0.32cm}
+Cada consulta produce un registro JSON que permite examinar posteriormente sus
+entradas, decisiones intermedias y salida sin repetir la ejecución.
+
+\vspace{0.20cm}
+{\fontsize{22}{27}\selectfont
+\textit{La traza es un artefacto diagnóstico; no constituye por sí sola una
+métrica de calidad.}\par}
 \end{block}
 
-\begin{block}{V. Resultados}
-La evaluación humana permite distinguir contenido correcto, cobertura de
-evidencia y validez de la salida.
+\begin{block}{LIMITACIONES E INVESTIGACIÓN EN CURSO}
+\begin{beamercolorbox}[wd=\linewidth,sep=0.34cm]{lesson card}
+  \noindent\textbf{\textit{Limitaciones---}}El estudio se realizó en un único dominio documental costarricense, con recuperación densa, un modelo de embeddings, un modelo generativo, 40 preguntas y una persona revisora.
 
-\vspace{0.55cm}
-\metric{78,8\,\%}{corrección factual estricta}
-\hfill
-\metric[Teal]{93,5\,\%}{fidelidad total a fuentes}
+  \vspace{0.20cm}
+  \noindent\textbf{\textit{Investigación en curso---}}Este trabajo constituye una prueba de concepto del pipeline RAG observable, no su versión definitiva. El pipeline continúa en desarrollo y se investigan mejoras en recuperación híbrida, reranking, cobertura de evidencia distribuida, validación de citas y ampliación a nuevos dominios latinoamericanos.
+\end{beamercolorbox}
+\end{block}
+
+\end{column}
+
+% --------------------------------------------------------------------------
+% COLUMNA 2: ARQUITECTURA, RESULTADOS, CONCLUSION Y REPOSITORIO
+% --------------------------------------------------------------------------
+\begin{column}{0.53\textwidth}
+
+\begin{block}{IV. Arquitectura RAG observable}
+\centering
+\includegraphics[
+  width=0.98\linewidth
+]{incisoB}
+\posterfigcaption{\textbf{Fig. 2.} Flujo observable de consulta y generación.
+El orquestador coordina la codificación de la pregunta, la recuperación del
+contexto, la generación local y la validación, mientras conserva los
+artefactos producidos en cada etapa.}
+
+\begin{beamercolorbox}[wd=\linewidth,sep=0.30cm,center]{trace}
+  {\bfseries\fontsize{27}{31}\selectfont
+  Traza por consulta = configuración + recuperación + generación + resultado}
+\end{beamercolorbox}
+
+\vspace{0.20cm}
+{\fontsize{21}{25}\selectfont\bfseries
+Configuración: multilingual-e5-small \cite{wang2024e5}; 384 dimensiones;
+similitud coseno; top-5; Qwen3.5:9B; Ollama; temperatura 0,1.\par}
+\end{block}
+
+\begin{block}{V. Resultados: ¿qué permitió observar la arquitectura?}
+\begin{columns}[T,totalwidth=\linewidth]
+  \begin{column}{0.49\linewidth}
+    \resultcard{93,9\,\%}{Evidencia recuperada}{31/33 preguntas respondibles
+    recuperaron alguna evidencia de referencia en el top-5.}
+    \vspace{0.25cm}
+    \resultcard{25,0\,\%}{Preguntas multisección}{2/8 preguntas que requerían
+    evidencia de varias secciones fueron aprobadas.}
+  \end{column}
+  \begin{column}{0.49\linewidth}
+    \resultcard{70,0\,\%}{Conclusión aprobada}{28/40 salidas obtuvieron una
+    conclusión global aprobada mediante revisión manual.}
+    \vspace{0.25cm}
+    \resultcard{100\,\%}{Abstención correcta}{Las 7 preguntas no respondibles
+    produjeron una abstención correcta.}
+  \end{column}
+\end{columns}
+
+\vspace{0.30cm}
+\begin{beamercolorbox}[wd=\linewidth,sep=0.34cm]{trace}
+  {\fontsize{24}{29}\selectfont
+  \textbf{Hallazgo principal---}Recuperar alguna evidencia pertinente no
+  garantiza reunir toda la información necesaria. Aunque 31 de 33 preguntas
+  respondibles recuperaron evidencia de referencia, solo 2 de 8 preguntas
+  multisección fueron aprobadas.\par}
+\end{beamercolorbox}
 
 \vspace{0.65cm}
-{\color{RuleGray}\rule{\linewidth}{0.04cm}}
-\vspace{0.55cm}
-
-\metric{72,7\,\%}{cobertura completa}
-\hfill
-\metric[Teal]{7 / 7}{abstenciones correctas}
-\end{block}
-
-\begin{block}{VI. Aprobación por tipo de pregunta}
 \centering
-\begin{tikzpicture}[x=0.065\linewidth,y=1.72cm]
+{\fontsize{23}{28}\selectfont\textit{Aprobación manual por tipo de pregunta}\par}
+\vspace{0.25cm}
+\begin{minipage}{0.96\linewidth}
+\centering
+\begin{tikzpicture}[x=0.066\linewidth,y=1.28cm]
   \draw[draw=RuleGray,line width=1.2pt] (0,0) -- (10,0);
   \foreach \x/\label in {0/0,2/20,4/40,6/60,8/80,10/100} {
     \draw[draw=RuleGray] (\x,0.05) -- (\x,-0.08);
-    \node[below,font=\smalltext,text=BodyText] at (\x,-0.08) {\label\%};
+    \node[below,font=\fontsize{19}{23}\selectfont,text=BodyText]
+      at (\x,-0.08) {\label\%};
   }
 
-  \node[left,align=right,text width=6.0cm,font=\smalltext,text=BodyText]
-    at (0,1.2) {Directas · 19/25};
-  \fill[BrightBlue] (0,0.82) rectangle (7.6,1.52);
-  \node[right,font=\bfseries\smalltext,text=Navy] at (7.6,1.17) {76\%};
+  \node[left,align=right,text width=5.8cm,
+    font=\fontsize{20}{24}\selectfont,text=BodyText]
+    at (0,1.10) {Directas: 19/25};
+  \fill[BrightBlue] (0,0.78) rectangle (7.6,1.42);
+  \node[right,font=\bfseries\fontsize{20}{24}\selectfont,text=Navy]
+    at (7.6,1.10) {76\%};
 
-  \node[left,align=right,text width=6.0cm,font=\smalltext,text=BodyText]
-    at (0,2.35) {Varias secciones · 2/8};
-  \fill[BrightBlue] (0,1.97) rectangle (2.5,2.67);
-  \node[right,font=\bfseries\smalltext,text=Navy] at (2.5,2.32) {25\%};
+  \node[left,align=right,text width=5.8cm,
+    font=\fontsize{20}{24}\selectfont,text=BodyText]
+    at (0,2.10) {Multisección: 2/8};
+  \fill[BrightBlue] (0,1.78) rectangle (2.5,2.42);
+  \node[right,font=\bfseries\fontsize{20}{24}\selectfont,text=Navy]
+    at (2.5,2.10) {25\%};
 
-  \node[left,align=right,text width=6.0cm,font=\smalltext,text=BodyText]
-    at (0,3.5) {No respondibles · 7/7};
-  \fill[BrightBlue] (0,3.12) rectangle (10,3.82);
-  \node[left,font=\bfseries\smalltext,text=White] at (9.85,3.47) {100\%};
+  \node[left,align=right,text width=5.8cm,
+    font=\fontsize{20}{24}\selectfont,text=BodyText]
+    at (0,3.10) {No respondibles: 7/7};
+  \fill[BrightBlue] (0,2.78) rectangle (10,3.42);
+  \node[left,font=\bfseries\fontsize{20}{24}\selectfont,text=White]
+    at (9.85,3.10) {100\%};
 \end{tikzpicture}
+\end{minipage}
 
-\vspace{0.5cm}
-\noindent\textbf{\textit{Hallazgo central—}}El sistema se abstiene bien, pero
-pierde cobertura cuando debe combinar evidencia distribuida.
-\end{block}
-
-\end{column}
-
-% --------------------------------------------------------------------------
-% COLUMNA 2: RENDIMIENTO, DISCUSION Y CONCLUSION
-% --------------------------------------------------------------------------
-\begin{column}{0.485\textwidth}
-
-\begin{block}{VII. Rendimiento automático}
-\begin{columns}[T,totalwidth=\linewidth]
-  \begin{column}{0.48\linewidth}
-    {\color{IEEEBlue}\bfseries\fontsize{29}{32}\selectfont 93,9\,\%\par}
-    {\bfseries recuperación con evidencia gold en top-5}
-  \end{column}
-  \begin{column}{0.46\linewidth}
-    {\color{IEEEBlue}\bfseries\fontsize{29}{32}\selectfont 27 ms\par}
-    {\bfseries búsqueda semántica promedio}
-  \end{column}
-\end{columns}
-
-\vspace{0.65cm}
-\noindent\textbf{5,53 s por pregunta:} la generación consume 5,36 s en
-promedio y domina la latencia del pipeline. La búsqueda representa menos del
-1\,\% del tiempo total.
-\end{block}
-
-\begin{block}{VIII. Interpretación de las métricas}
-\begin{itemize}
-  \item \textbf{Corrección factual estricta:} proporción de respuestas
-    respondibles calificadas como correctas, sin dar crédito a las parciales.
-  \item \textbf{Fidelidad total:} grado en que las afirmaciones permanecen
-    apoyadas por los fragmentos recuperados.
-  \item \textbf{Cobertura completa:} presencia de toda la evidencia necesaria,
-    no solo de una parte.
-  \item \textbf{Recuperación top-5:} localización automática de al menos una
-    evidencia gold entre los cinco primeros fragmentos.
-\end{itemize}
-\end{block}
-
-\begin{block}{IX. Lo que reveló la observabilidad}
-\finding{1}{Evidencia distribuida}{
-  Solo 2 de 8 preguntas de varias secciones fueron aprobadas. Con frecuencia
-  se recuperó una parte, pero no todos los artículos necesarios.}
-
-\finding{2}{Documento correcto, fragmento incorrecto}{
-  En q029 apareció el artículo relacionado, pero no el fragmento que contenía
-  el dato. El análisis por identificador de registro habría ocultado el fallo.}
-
-\finding{3}{Contenido correcto, salida inválida}{
-  q025 y q032 se rechazaron porque las citas visibles y estructuradas no
-  coincidían. La validez del contrato también es calidad.}
-
-\finding{4}{Abstención confiable}{
-  Las 7 preguntas sobre precios, horarios, contraseñas o cupos actuales
-  recibieron \texttt{not\_found}, sin inventar información ausente.}
-\end{block}
-
-\begin{block}{X. Conclusión}
-\noindent{\bfseries
-Una arquitectura pequeña puede ofrecer trazabilidad útil sin una plataforma
-compleja. Registrar evidencia, citas, estados y tiempos permitió localizar
-fallos en recuperación, generación y validación.}
-
-\vspace{0.35cm}
-El prototipo funcionó mejor con preguntas directas y abstenciones. El reto
-principal fue combinar evidencia distribuida. Por ello, una arquitectura RAG
-observable debe distinguir evidencia por documento y por fragmento, y validar
-la consistencia de las citas antes de entregar la respuesta.
-\end{block}
-
-\begin{block}{XI. Limitaciones y trabajo futuro}
-\textbf{Limitaciones}
-\begin{itemize}
-  \item un dominio, un embedding y un modelo generativo;
-  \item 40 preguntas y una persona revisora;
-  \item sin comparación léxica, híbrida ni reranking;
-  \item el caso no representa toda la diversidad del español latinoamericano.
-\end{itemize}
-
-\vspace{0.35cm}
-\textbf{Trabajo futuro}
-\begin{itemize}
-  \item reranking para evidencia multisección;
-  \item comparar recuperación densa, léxica e híbrida;
-  \item ampliar países, dominios y revisión humana;
-  \item estudiar umbrales de abstención y calibración.
-\end{itemize}
-\end{block}
-
-\begin{block}{Código, datos y documentación}
-\centering
-{\smalltext Repositorio reproducible:\par}
-\vspace{0.15cm}
-{\bfseries\fontsize{25}{29}\selectfont
-\url{https://github.com/niparra21/nlpArgentina}}
-\end{block}
-
-\end{column}
-\end{columns}
+\vspace{0.60cm}
+{\fontsize{21}{25}\selectfont
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{0.96\linewidth}{
+  @{}
+  >{\raggedright\arraybackslash}X
+  >{\centering\arraybackslash}p{4.5cm}
+  >{\raggedleft\arraybackslash}p{4.1cm}
+  @{}
+}
+\toprule
+\textbf{Indicador secundario} & \textbf{Casos} & \textbf{Resultado} \\
+\midrule
+Salidas estructuralmente válidas & 37/40 & 92,5\,\% \\
+Decisión de estado correcta & 35/40 & 87,5\,\% \\
+Al menos una fuente de referencia citada & 27/33 & 81,8\,\% \\
+Toda la evidencia esperada citada & 25/33 & 75,8\,\% \\
+Fidelidad total a las fuentes & 29/31 & 93,5\,\% \\
+Tiempo promedio del pipeline & 40 consultas & 5,53 s \\
+\bottomrule
+\end{tabularx}
+}
 
 \vspace{0.45cm}
+{\fontsize{19}{23}\selectfont\justifying
+\textit{Nota:} las métricas de recuperación y citas utilizan 33 preguntas
+respondibles. La fidelidad se calculó sobre 31 respuestas con afirmaciones
+evaluables. Los porcentajes no constituyen una medida única de exactitud
+general.\par}
+\end{block}
+
+\begin{block}{Conclusión}
+\begin{beamercolorbox}[wd=\linewidth,sep=0.80cm]{conclusion}
+  {\bfseries\fontsize{29}{34}\selectfont
+  Una arquitectura RAG mínima puede ofrecer observabilidad útil sin depender
+  de una plataforma compleja.\par}
+  \vspace{0.24cm}
+  {\fontsize{23}{28}\selectfont\justifying
+  \leftskip=0.45cm
+  \rightskip=0.45cm
+  Al conservar fragmentos, puntuaciones, contexto, respuesta, estado,
+  citas y tiempos, el prototipo permitió distinguir fallos de
+  recuperación, cobertura, generación y validación. En el caso estudiado,
+  el principal reto fue reunir evidencia distribuida entre varias
+  secciones, no abstenerse ante información ausente.\par}
+\end{beamercolorbox}
+\end{block}
+
+\end{column}
+\end{columns}
+
+\vspace{0.75cm}
+
+% ============================================================================
+% 7. CIERRE VISUAL A TODO EL ANCHO
+% ============================================================================
+\begin{block}{VI. Lecciones arquitectónicas}
+\begin{columns}[T,totalwidth=\linewidth]
+  \begin{column}{0.32\linewidth}
+    \lessoncard{Evidencia distribuida}{Las preguntas multisección obtuvieron la
+    menor aprobación: 2/8. En varios casos se recuperó solo una parte de la
+    evidencia.}{Evaluar cobertura conjunta, no solo la presencia de un
+    documento relacionado.}
+  \end{column}
+  \begin{column}{0.32\linewidth}
+    \lessoncard{Documento correcto, fragmento incorrecto}{La traza reveló casos
+    en los que se recuperó el documento pertinente, pero no el fragmento que
+    contenía el dato.}{Conservar identificadores, orden y puntuaciones a nivel
+    de fragmento.}
+  \end{column}
+  \begin{column}{0.32\linewidth}
+    \lessoncard{Validación independiente}{Dos salidas con contenido pertinente
+    fueron rechazadas porque las citas visibles y los identificadores
+    estructurados no coincidían.}{Validar tanto el contrato JSON como la
+    consistencia de las citas.}
+  \end{column}
+\end{columns}
+\end{block}
+
+\vspace{0.55cm}
 
 % ============================================================================
 % 8. REFERENCIAS IEEE Y PIE
 % ============================================================================
 \begin{beamercolorbox}[wd=\textwidth,sep=0cm]{block body}
-  {\color{Navy}\bfseries\fontsize{26}{30}\selectfont XII. Referencias\par}
+  {\color{Navy}\bfseries\fontsize{25}{29}\selectfont VII. Referencias\par}
   \vspace{0.25cm}
-  {\fontsize{16}{20}\selectfont
-    \bibliographystyle{IEEEtran}
-    \bibliography{references}
+  {\fontsize{19}{23}\selectfont
+    \begin{thebibliography}{3}
+      \setlength{\itemsep}{0.18cm}
+      \bibitem{lewis2020rag}
+      P. Lewis, E. Perez, A. Piktus, F. Petroni, V. Karpukhin, N. Goyal,
+      H. Küttler, M. Lewis, W. tau Yih, T. Rocktäschel, S. Riedel, and
+      D. Kiela, ``Retrieval-augmented generation for knowledge-intensive NLP
+      tasks,'' in \textit{Advances in Neural Information Processing Systems},
+      vol. 33, pp. 9459--9474, 2020.
+
+      \bibitem{tec2026reglamentos}
+      Tecnológico de Costa Rica, ``Reglamentos y normativa institucional
+      utilizados como corpus,'' sitio web institucional y captura reproducible
+      del proyecto, corpus de 25 documentos, consultado y versionado en julio
+      de 2026. [En línea]. Disponible en: \url{https://www.tec.ac.cr/}
+
+      \bibitem{wang2024e5}
+      L. Wang, N. Yang, X. Huang, L. Yang, R. Majumder, and F. Wei,
+      ``Multilingual E5 text embeddings: A technical report,''
+      \textit{arXiv preprint arXiv:2402.05672}, 2024.
+    \end{thebibliography}
   }
 \end{beamercolorbox}
 
-\vspace{0.25cm}
+\vspace{0.45cm}
 \begin{columns}[T,totalwidth=\textwidth]
   \begin{column}{0.76\textwidth}
-    {\color{BodyText}\fontsize{15}{18}\selectfont
+    {\color{BodyText}\fontsize{19}{23}\selectfont
       Los resultados corresponden a una corrida reproducible del prototipo y
       no sustituyen la consulta de la normativa oficial.}
   \end{column}
   \begin{column}{0.22\textwidth}
     \raggedleft
-    {\color{Navy}\bfseries\fontsize{18}{21}\selectfont Sesión 2 · Orden 12}
+    {\color{Navy}\bfseries\fontsize{19}{23}\selectfont Sesión 2 · Orden 12}
   \end{column}
 \end{columns}
 
